@@ -30,7 +30,6 @@
 		F6955A0027FB1B62005656AB /* UIStackView+.swift in Sources */ = {isa = PBXBuildFile; fileRef = F69559FF27FB1B62005656AB /* UIStackView+.swift */; };
 		F6955A0227FB1BBC005656AB /* Reusable.swift in Sources */ = {isa = PBXBuildFile; fileRef = F6955A0127FB1BBC005656AB /* Reusable.swift */; };
 		F6955A0427FB1EA1005656AB /* Color.swift in Sources */ = {isa = PBXBuildFile; fileRef = F6955A0327FB1EA1005656AB /* Color.swift */; };
-		F6955A0B27FB38CE005656AB /* UIFont+.swift in Sources */ = {isa = PBXBuildFile; fileRef = F6955A0A27FB38CE005656AB /* UIFont+.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -57,7 +56,6 @@
 		F69559FF27FB1B62005656AB /* UIStackView+.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UIStackView+.swift"; sourceTree = "<group>"; };
 		F6955A0127FB1BBC005656AB /* Reusable.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Reusable.swift; sourceTree = "<group>"; };
 		F6955A0327FB1EA1005656AB /* Color.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Color.swift; sourceTree = "<group>"; };
-		F6955A0A27FB38CE005656AB /* UIFont+.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UIFont+.swift"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -190,7 +188,6 @@
 		F69559F527FB15C9005656AB /* Extensions */ = {
 			isa = PBXGroup;
 			children = (
-				F6955A0A27FB38CE005656AB /* UIFont+.swift */,
 				F69559FF27FB1B62005656AB /* UIStackView+.swift */,
 				F69559F627FB15E5005656AB /* UIView+.swift */,
 				F69559FD27FB1ACD005656AB /* UIView+NibCreatable.swift */,
@@ -307,7 +304,6 @@
 				F69559F727FB15E5005656AB /* UIView+.swift in Sources */,
 				F6955A0227FB1BBC005656AB /* Reusable.swift in Sources */,
 				F69559D227FA9D75005656AB /* BaseViewController.swift in Sources */,
-				F6955A0B27FB38CE005656AB /* UIFont+.swift in Sources */,
 				F6955A0027FB1B62005656AB /* UIStackView+.swift in Sources */,
 				F6955A0427FB1EA1005656AB /* Color.swift in Sources */,
 				F69559EE27FB1030005656AB /* Font.swift in Sources */,
