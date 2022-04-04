@@ -14,6 +14,8 @@
 		F69559C227FA9C8E005656AB /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = F69559C027FA9C8E005656AB /* LaunchScreen.storyboard */; };
 		F69559D227FA9D75005656AB /* BaseViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = F69559D127FA9D75005656AB /* BaseViewController.swift */; };
 		F69559D827FAA339005656AB /* Image.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = F69559D727FAA338005656AB /* Image.xcassets */; };
+		F69559DB27FAA50B005656AB /* SnapKit-Dynamic in Frameworks */ = {isa = PBXBuildFile; productRef = F69559DA27FAA50B005656AB /* SnapKit-Dynamic */; };
+		F69559DE27FAA519005656AB /* Then in Frameworks */ = {isa = PBXBuildFile; productRef = F69559DD27FAA519005656AB /* Then */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -28,6 +30,17 @@
 		F69559D727FAA338005656AB /* Image.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Image.xcassets; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
+/* Begin PBXFrameworksBuildPhase section */
+		F69559AF27FA9C8C005656AB /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				F69559DB27FAA50B005656AB /* SnapKit-Dynamic in Frameworks */,
+				F69559DE27FAA519005656AB /* Then in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
 		F69559A927FA9C8C005656AB = {
@@ -125,6 +138,10 @@
 			dependencies = (
 			);
 			name = Instagram_Clone;
+			packageProductDependencies = (
+				F69559DA27FAA50B005656AB /* SnapKit-Dynamic */,
+				F69559DD27FAA519005656AB /* Then */,
+			);
 			productName = Instagram_Clone;
 			productReference = F69559B227FA9C8C005656AB /* Instagram_Clone.app */;
 			productType = "com.apple.product-type.application";
@@ -153,6 +170,10 @@
 				Base,
 			);
 			mainGroup = F69559A927FA9C8C005656AB;
+			packageReferences = (
+				F69559D927FAA50B005656AB /* XCRemoteSwiftPackageReference "SnapKit" */,
+				F69559DC27FAA519005656AB /* XCRemoteSwiftPackageReference "Then" */,
+			);
 			productRefGroup = F69559B327FA9C8C005656AB /* Products */;
 			projectDirPath = "";
 			projectRoot = "";
@@ -394,6 +415,37 @@
 		};
 /* End XCConfigurationList section */
 
+/* Begin XCRemoteSwiftPackageReference section */
+		F69559D927FAA50B005656AB /* XCRemoteSwiftPackageReference "SnapKit" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/SnapKit/SnapKit.git";
+			requirement = {
+				branch = develop;
+				kind = branch;
+			};
+		};
+		F69559DC27FAA519005656AB /* XCRemoteSwiftPackageReference "Then" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/devxoul/Then.git";
+			requirement = {
+				branch = master;
+				kind = branch;
+			};
+		};
+/* End XCRemoteSwiftPackageReference section */
+
+/* Begin XCSwiftPackageProductDependency section */
+		F69559DA27FAA50B005656AB /* SnapKit-Dynamic */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = F69559D927FAA50B005656AB /* XCRemoteSwiftPackageReference "SnapKit" */;
+			productName = "SnapKit-Dynamic";
+		};
+		F69559DD27FAA519005656AB /* Then */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = F69559DC27FAA519005656AB /* XCRemoteSwiftPackageReference "Then" */;
+			productName = Then;
+		};
+/* End XCSwiftPackageProductDependency section */
 	};
 	rootObject = F69559AA27FA9C8C005656AB /* Project object */;
 }
