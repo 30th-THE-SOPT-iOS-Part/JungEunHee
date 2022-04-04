@@ -30,6 +30,7 @@
 		F6955A0027FB1B62005656AB /* UIStackView+.swift in Sources */ = {isa = PBXBuildFile; fileRef = F69559FF27FB1B62005656AB /* UIStackView+.swift */; };
 		F6955A0227FB1BBC005656AB /* Reusable.swift in Sources */ = {isa = PBXBuildFile; fileRef = F6955A0127FB1BBC005656AB /* Reusable.swift */; };
 		F6955A0427FB1EA1005656AB /* Color.swift in Sources */ = {isa = PBXBuildFile; fileRef = F6955A0327FB1EA1005656AB /* Color.swift */; };
+		F6955A0D27FB444E005656AB /* Color.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = F6955A0C27FB444E005656AB /* Color.xcassets */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -56,6 +57,7 @@
 		F69559FF27FB1B62005656AB /* UIStackView+.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UIStackView+.swift"; sourceTree = "<group>"; };
 		F6955A0127FB1BBC005656AB /* Reusable.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Reusable.swift; sourceTree = "<group>"; };
 		F6955A0327FB1EA1005656AB /* Color.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Color.swift; sourceTree = "<group>"; };
+		F6955A0C27FB444E005656AB /* Color.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Color.xcassets; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -103,6 +105,7 @@
 				F69559DF27FB0CF0005656AB /* Fonts */,
 				F69559CA27FA9CB1005656AB /* Storyboards */,
 				F69559BE27FA9C8E005656AB /* Assets.xcassets */,
+				F6955A0C27FB444E005656AB /* Color.xcassets */,
 				F69559D727FAA338005656AB /* Image.xcassets */,
 			);
 			path = Resource;
@@ -280,6 +283,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				F69559E727FB0EF6005656AB /* SF-Pro-Display-Bold.otf in Resources */,
+				F6955A0D27FB444E005656AB /* Color.xcassets in Resources */,
 				F69559C227FA9C8E005656AB /* LaunchScreen.storyboard in Resources */,
 				F69559D827FAA339005656AB /* Image.xcassets in Resources */,
 				F69559E627FB0EF6005656AB /* SF-Pro-Display-Semibold.otf in Resources */,
