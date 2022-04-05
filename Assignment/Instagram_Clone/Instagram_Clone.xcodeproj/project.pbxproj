@@ -9,7 +9,7 @@
 /* Begin PBXBuildFile section */
 		F69559B627FA9C8C005656AB /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = F69559B527FA9C8C005656AB /* AppDelegate.swift */; };
 		F69559B827FA9C8C005656AB /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = F69559B727FA9C8C005656AB /* SceneDelegate.swift */; };
-		F69559BA27FA9C8C005656AB /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = F69559B927FA9C8C005656AB /* ViewController.swift */; };
+		F69559BA27FA9C8C005656AB /* SignInViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = F69559B927FA9C8C005656AB /* SignInViewController.swift */; };
 		F69559BF27FA9C8E005656AB /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = F69559BE27FA9C8E005656AB /* Assets.xcassets */; };
 		F69559C227FA9C8E005656AB /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = F69559C027FA9C8E005656AB /* LaunchScreen.storyboard */; };
 		F69559D227FA9D75005656AB /* BaseViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = F69559D127FA9D75005656AB /* BaseViewController.swift */; };
@@ -30,6 +30,7 @@
 		F6955A0027FB1B62005656AB /* UIStackView+.swift in Sources */ = {isa = PBXBuildFile; fileRef = F69559FF27FB1B62005656AB /* UIStackView+.swift */; };
 		F6955A0227FB1BBC005656AB /* Reusable.swift in Sources */ = {isa = PBXBuildFile; fileRef = F6955A0127FB1BBC005656AB /* Reusable.swift */; };
 		F6955A0427FB1EA1005656AB /* Color.swift in Sources */ = {isa = PBXBuildFile; fileRef = F6955A0327FB1EA1005656AB /* Color.swift */; };
+		F6955A0727FB3677005656AB /* SignInView.swift in Sources */ = {isa = PBXBuildFile; fileRef = F6955A0627FB3677005656AB /* SignInView.swift */; };
 		F6955A0D27FB444E005656AB /* Color.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = F6955A0C27FB444E005656AB /* Color.xcassets */; };
 		F6955A1427FB7B9E005656AB /* BlueButton.swift in Sources */ = {isa = PBXBuildFile; fileRef = F6955A1327FB7B9E005656AB /* BlueButton.swift */; };
 		F6955A1627FB8131005656AB /* UITextField+.swift in Sources */ = {isa = PBXBuildFile; fileRef = F6955A1527FB8131005656AB /* UITextField+.swift */; };
@@ -39,7 +40,7 @@
 		F69559B227FA9C8C005656AB /* Instagram_Clone.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Instagram_Clone.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		F69559B527FA9C8C005656AB /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		F69559B727FA9C8C005656AB /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
-		F69559B927FA9C8C005656AB /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
+		F69559B927FA9C8C005656AB /* SignInViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SignInViewController.swift; sourceTree = "<group>"; };
 		F69559BE27FA9C8E005656AB /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		F69559C127FA9C8E005656AB /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		F69559C327FA9C8E005656AB /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
@@ -59,6 +60,7 @@
 		F69559FF27FB1B62005656AB /* UIStackView+.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UIStackView+.swift"; sourceTree = "<group>"; };
 		F6955A0127FB1BBC005656AB /* Reusable.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Reusable.swift; sourceTree = "<group>"; };
 		F6955A0327FB1EA1005656AB /* Color.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Color.swift; sourceTree = "<group>"; };
+		F6955A0627FB3677005656AB /* SignInView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SignInView.swift; sourceTree = "<group>"; };
 		F6955A0C27FB444E005656AB /* Color.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Color.xcassets; sourceTree = "<group>"; };
 		F6955A1327FB7B9E005656AB /* BlueButton.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BlueButton.swift; sourceTree = "<group>"; };
 		F6955A1527FB8131005656AB /* UITextField+.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UITextField+.swift"; sourceTree = "<group>"; };
@@ -77,6 +79,14 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		F66CD5D327FC026000ACBCD1 /* Views */ = {
+			isa = PBXGroup;
+			children = (
+				F6955A0627FB3677005656AB /* SignInView.swift */,
+			);
+			path = Views;
+			sourceTree = "<group>";
+		};
 		F69559A927FA9C8C005656AB = {
 			isa = PBXGroup;
 			children = (
@@ -145,6 +155,7 @@
 		F69559CD27FA9D0C005656AB /* Controllers */ = {
 			isa = PBXGroup;
 			children = (
+				F69559B927FA9C8C005656AB /* SignInViewController.swift */,
 			);
 			path = Controllers;
 			sourceTree = "<group>";
@@ -202,18 +213,22 @@
 			path = Protocols;
 			sourceTree = "<group>";
 		};
-		F6955A0527FB3623005656AB /* Views */ = {
-			isa = PBXGroup;
-			children = (
-			path = Views;
-			sourceTree = "<group>";
-		};
 		F6955A1027FB7AEF005656AB /* Presentation */ = {
 			isa = PBXGroup;
 			children = (
 				F6955A1227FB7B41005656AB /* Common */,
+				F6955A1127FB7B02005656AB /* SignIn */,
 			);
 			path = Presentation;
+			sourceTree = "<group>";
+		};
+		F6955A1127FB7B02005656AB /* SignIn */ = {
+			isa = PBXGroup;
+			children = (
+				F66CD5D327FC026000ACBCD1 /* Views */,
+				F69559CD27FA9D0C005656AB /* Controllers */,
+			);
+			path = SignIn;
 			sourceTree = "<group>";
 		};
 		F6955A1227FB7B41005656AB /* Common */ = {
@@ -313,8 +328,8 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				F69559BA27FA9C8C005656AB /* ViewController.swift in Sources */,
 				F69559F927FB183E005656AB /* UIViewController+NibCreatable.swift in Sources */,
+				F69559BA27FA9C8C005656AB /* SignInViewController.swift in Sources */,
 				F69559F027FB1164005656AB /* Image.swift in Sources */,
 				F69559FE27FB1ACD005656AB /* UIView+NibCreatable.swift in Sources */,
 				F69559FC27FB18A2005656AB /* NibCreatable.swift in Sources */,
@@ -323,6 +338,7 @@
 				F6955A0227FB1BBC005656AB /* Reusable.swift in Sources */,
 				F69559D227FA9D75005656AB /* BaseViewController.swift in Sources */,
 				F6955A0027FB1B62005656AB /* UIStackView+.swift in Sources */,
+				F6955A0727FB3677005656AB /* SignInView.swift in Sources */,
 				F6955A0427FB1EA1005656AB /* Color.swift in Sources */,
 				F69559EE27FB1030005656AB /* Font.swift in Sources */,
 				F69559B627FA9C8C005656AB /* AppDelegate.swift in Sources */,

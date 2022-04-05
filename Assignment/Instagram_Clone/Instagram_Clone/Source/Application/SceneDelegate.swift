@@ -17,11 +17,7 @@ class SceneDelegate: UIResponder, UIWindowSceneDelegate {
         window = UIWindow(frame: windowScene.coordinateSpace.bounds)
         
         window?.windowScene = windowScene
-        
-        let viewController = UIViewController(nibName: "ViewController", bundle: nil)
-        let rootViewController = UINavigationController(rootViewController: viewController)
-        
-        window?.rootViewController = rootViewController
+        window?.rootViewController = UINavigationController(rootViewController: SignInViewController.instanceFromNib())
         window?.makeKeyAndVisible()
     }
 }
