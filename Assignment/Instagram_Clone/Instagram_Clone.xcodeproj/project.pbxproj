@@ -31,6 +31,8 @@
 		F6955A0227FB1BBC005656AB /* Reusable.swift in Sources */ = {isa = PBXBuildFile; fileRef = F6955A0127FB1BBC005656AB /* Reusable.swift */; };
 		F6955A0427FB1EA1005656AB /* Color.swift in Sources */ = {isa = PBXBuildFile; fileRef = F6955A0327FB1EA1005656AB /* Color.swift */; };
 		F6955A0D27FB444E005656AB /* Color.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = F6955A0C27FB444E005656AB /* Color.xcassets */; };
+		F6955A1427FB7B9E005656AB /* BlueButton.swift in Sources */ = {isa = PBXBuildFile; fileRef = F6955A1327FB7B9E005656AB /* BlueButton.swift */; };
+		F6955A1627FB8131005656AB /* UITextField+.swift in Sources */ = {isa = PBXBuildFile; fileRef = F6955A1527FB8131005656AB /* UITextField+.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -58,6 +60,8 @@
 		F6955A0127FB1BBC005656AB /* Reusable.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Reusable.swift; sourceTree = "<group>"; };
 		F6955A0327FB1EA1005656AB /* Color.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Color.swift; sourceTree = "<group>"; };
 		F6955A0C27FB444E005656AB /* Color.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Color.xcassets; sourceTree = "<group>"; };
+		F6955A1327FB7B9E005656AB /* BlueButton.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BlueButton.swift; sourceTree = "<group>"; };
+		F6955A1527FB8131005656AB /* UITextField+.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UITextField+.swift"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -122,10 +126,9 @@
 		F69559CB27FA9CF6005656AB /* Source */ = {
 			isa = PBXGroup;
 			children = (
-				F69559F327FB1530005656AB /* Common */,
 				F69559CC27FA9CFA005656AB /* Application */,
-				F6955A0527FB3623005656AB /* Views */,
-				F69559CD27FA9D0C005656AB /* Controllers */,
+				F69559F327FB1530005656AB /* Common */,
+				F6955A1027FB7AEF005656AB /* Presentation */,
 			);
 			path = Source;
 			sourceTree = "<group>";
@@ -142,18 +145,8 @@
 		F69559CD27FA9D0C005656AB /* Controllers */ = {
 			isa = PBXGroup;
 			children = (
-				F6955A0927FB36B5005656AB /* Auth */,
-				F69559D027FA9D5B005656AB /* Common */,
 			);
 			path = Controllers;
-			sourceTree = "<group>";
-		};
-		F69559D027FA9D5B005656AB /* Common */ = {
-			isa = PBXGroup;
-			children = (
-				F69559D127FA9D75005656AB /* BaseViewController.swift */,
-			);
-			path = Common;
 			sourceTree = "<group>";
 		};
 		F69559DF27FB0CF0005656AB /* Fonts */ = {
@@ -195,6 +188,7 @@
 				F69559F627FB15E5005656AB /* UIView+.swift */,
 				F69559FD27FB1ACD005656AB /* UIView+NibCreatable.swift */,
 				F69559F827FB183E005656AB /* UIViewController+NibCreatable.swift */,
+				F6955A1527FB8131005656AB /* UITextField+.swift */,
 			);
 			path = Extensions;
 			sourceTree = "<group>";
@@ -211,7 +205,26 @@
 		F6955A0527FB3623005656AB /* Views */ = {
 			isa = PBXGroup;
 			children = (
-				F6955A0827FB36AF005656AB /* Auth */,
+			path = Views;
+			sourceTree = "<group>";
+		};
+		F6955A1027FB7AEF005656AB /* Presentation */ = {
+			isa = PBXGroup;
+			children = (
+				F6955A1227FB7B41005656AB /* Common */,
+			);
+			path = Presentation;
+			sourceTree = "<group>";
+		};
+		F6955A1227FB7B41005656AB /* Common */ = {
+			isa = PBXGroup;
+			children = (
+				F69559D127FA9D75005656AB /* BaseViewController.swift */,
+				F6955A1327FB7B9E005656AB /* BlueButton.swift */,
+			);
+			path = Common;
+			sourceTree = "<group>";
+		};
 			);
 			path = Views;
 			sourceTree = "<group>";
@@ -306,6 +319,7 @@
 				F69559FE27FB1ACD005656AB /* UIView+NibCreatable.swift in Sources */,
 				F69559FC27FB18A2005656AB /* NibCreatable.swift in Sources */,
 				F69559F727FB15E5005656AB /* UIView+.swift in Sources */,
+				F6955A1627FB8131005656AB /* UITextField+.swift in Sources */,
 				F6955A0227FB1BBC005656AB /* Reusable.swift in Sources */,
 				F69559D227FA9D75005656AB /* BaseViewController.swift in Sources */,
 				F6955A0027FB1B62005656AB /* UIStackView+.swift in Sources */,
@@ -314,6 +328,7 @@
 				F69559B627FA9C8C005656AB /* AppDelegate.swift in Sources */,
 				F69559B827FA9C8C005656AB /* SceneDelegate.swift in Sources */,
 				F69559F227FB12BE005656AB /* Const.swift in Sources */,
+				F6955A1427FB7B9E005656AB /* BlueButton.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
