@@ -13,6 +13,8 @@
 		F66CD5E227FD24DA00ACBCD1 /* SignUpFirstViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = F66CD5E027FD24DA00ACBCD1 /* SignUpFirstViewController.xib */; };
 		F66CD5E627FD2CA000ACBCD1 /* SignUpSecondViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = F66CD5E427FD2CA000ACBCD1 /* SignUpSecondViewController.swift */; };
 		F66CD5E727FD2CA000ACBCD1 /* SignUpSecondViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = F66CD5E527FD2CA000ACBCD1 /* SignUpSecondViewController.xib */; };
+		F66CD5EA27FD5E0D00ACBCD1 /* WelcomeViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = F66CD5E927FD5E0D00ACBCD1 /* WelcomeViewController.swift */; };
+		F66CD5EC27FD5E1C00ACBCD1 /* WelcomeView.swift in Sources */ = {isa = PBXBuildFile; fileRef = F66CD5EB27FD5E1C00ACBCD1 /* WelcomeView.swift */; };
 		F69559B627FA9C8C005656AB /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = F69559B527FA9C8C005656AB /* AppDelegate.swift */; };
 		F69559B827FA9C8C005656AB /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = F69559B727FA9C8C005656AB /* SceneDelegate.swift */; };
 		F69559BA27FA9C8C005656AB /* SignInViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = F69559B927FA9C8C005656AB /* SignInViewController.swift */; };
@@ -49,6 +51,8 @@
 		F66CD5E027FD24DA00ACBCD1 /* SignUpFirstViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = SignUpFirstViewController.xib; sourceTree = "<group>"; };
 		F66CD5E427FD2CA000ACBCD1 /* SignUpSecondViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SignUpSecondViewController.swift; sourceTree = "<group>"; };
 		F66CD5E527FD2CA000ACBCD1 /* SignUpSecondViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = SignUpSecondViewController.xib; sourceTree = "<group>"; };
+		F66CD5E927FD5E0D00ACBCD1 /* WelcomeViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WelcomeViewController.swift; sourceTree = "<group>"; };
+		F66CD5EB27FD5E1C00ACBCD1 /* WelcomeView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WelcomeView.swift; sourceTree = "<group>"; };
 		F69559B227FA9C8C005656AB /* Instagram_Clone.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Instagram_Clone.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		F69559B527FA9C8C005656AB /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		F69559B727FA9C8C005656AB /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -97,6 +101,31 @@
 				F6955A0627FB3677005656AB /* SignInView.swift */,
 			);
 			path = Views;
+			sourceTree = "<group>";
+		};
+		F66CD5E827FD5DF500ACBCD1 /* Welcome */ = {
+			isa = PBXGroup;
+			children = (
+				F66CD5ED27FD5E2000ACBCD1 /* Viws */,
+				F66CD5EE27FD5E2600ACBCD1 /* Controllers */,
+			);
+			path = Welcome;
+			sourceTree = "<group>";
+		};
+		F66CD5ED27FD5E2000ACBCD1 /* Viws */ = {
+			isa = PBXGroup;
+			children = (
+				F66CD5EB27FD5E1C00ACBCD1 /* WelcomeView.swift */,
+			);
+			path = Viws;
+			sourceTree = "<group>";
+		};
+		F66CD5EE27FD5E2600ACBCD1 /* Controllers */ = {
+			isa = PBXGroup;
+			children = (
+				F66CD5E927FD5E0D00ACBCD1 /* WelcomeViewController.swift */,
+			);
+			path = Controllers;
 			sourceTree = "<group>";
 		};
 		F69559A927FA9C8C005656AB = {
@@ -228,6 +257,7 @@
 		F6955A1027FB7AEF005656AB /* Presentation */ = {
 			isa = PBXGroup;
 			children = (
+				F66CD5E827FD5DF500ACBCD1 /* Welcome */,
 				F6955A1227FB7B41005656AB /* Common */,
 				F6955A1127FB7B02005656AB /* SignIn */,
 				F6955A1727FB8DFF005656AB /* SignUp */,
@@ -367,6 +397,7 @@
 				F69559FE27FB1ACD005656AB /* UIView+NibCreatable.swift in Sources */,
 				F66CD5E627FD2CA000ACBCD1 /* SignUpSecondViewController.swift in Sources */,
 				F69559FC27FB18A2005656AB /* NibCreatable.swift in Sources */,
+				F66CD5EA27FD5E0D00ACBCD1 /* WelcomeViewController.swift in Sources */,
 				F69559F727FB15E5005656AB /* UIView+.swift in Sources */,
 				F6955A1627FB8131005656AB /* UITextField+.swift in Sources */,
 				F6955A0227FB1BBC005656AB /* Reusable.swift in Sources */,
@@ -377,6 +408,7 @@
 				F6955A0427FB1EA1005656AB /* Color.swift in Sources */,
 				F69559EE27FB1030005656AB /* Font.swift in Sources */,
 				F69559B627FA9C8C005656AB /* AppDelegate.swift in Sources */,
+				F66CD5EC27FD5E1C00ACBCD1 /* WelcomeView.swift in Sources */,
 				F69559B827FA9C8C005656AB /* SceneDelegate.swift in Sources */,
 				F69559F227FB12BE005656AB /* Const.swift in Sources */,
 				F66CD5E127FD24DA00ACBCD1 /* SignUpFirstViewController.swift in Sources */,
