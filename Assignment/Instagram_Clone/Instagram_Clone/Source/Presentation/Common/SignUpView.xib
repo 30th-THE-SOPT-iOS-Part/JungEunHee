@@ -1,0 +1,112 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="19529" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina6_1" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="19519"/>
+        <capability name="Named colors" minToolsVersion="9.0"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="System colors in document resources" minToolsVersion="11.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner" customClass="SignUpView" customModule="Instagram_Clone" customModuleProvider="target">
+            <connections>
+                <outlet property="descriptionLabel" destination="7yB-DQ-8zc" id="7pG-I4-TfX"/>
+                <outlet property="inputTextField" destination="j2n-CZ-hXm" id="oUZ-cA-X0c"/>
+                <outlet property="nextButton" destination="VbQ-l1-WKv" id="lkV-Am-JQd"/>
+                <outlet property="titleLabel" destination="Za0-8Q-nXX" id="X3g-K0-6Cp"/>
+            </connections>
+        </placeholder>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <view contentMode="scaleToFill" id="iN0-l3-epB">
+            <rect key="frame" x="0.0" y="0.0" width="414" height="350"/>
+            <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+            <subviews>
+                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" usesAttributedText="YES" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Za0-8Q-nXX">
+                    <rect key="frame" x="144.5" y="110" width="125" height="29"/>
+                    <attributedString key="attributedText">
+                        <fragment content="제목제목제목">
+                            <attributes>
+                                <color key="NSColor" name="textColor" catalog="System" colorSpace="catalog"/>
+                                <font key="NSFont" metaFont="system" size="24"/>
+                                <paragraphStyle key="NSParagraphStyle" alignment="center" lineBreakMode="wordWrapping" baseWritingDirection="natural" tighteningFactorForTruncation="0.0"/>
+                            </attributes>
+                        </fragment>
+                    </attributedString>
+                    <nil key="highlightedColor"/>
+                </label>
+                <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="사용자 이름" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="j2n-CZ-hXm">
+                    <rect key="frame" x="20" y="225.5" width="374" height="45"/>
+                    <color key="backgroundColor" name="LightGray"/>
+                    <constraints>
+                        <constraint firstAttribute="height" constant="45" id="5Bz-5N-Ifs"/>
+                    </constraints>
+                    <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                    <textInputTraits key="textInputTraits"/>
+                </textField>
+                <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="VbQ-l1-WKv">
+                    <rect key="frame" x="20" y="290.5" width="374" height="45"/>
+                    <constraints>
+                        <constraint firstAttribute="height" constant="45" id="nCB-Hc-MKL"/>
+                    </constraints>
+                    <state key="normal" title="Button"/>
+                    <buttonConfiguration key="configuration" style="filled">
+                        <attributedString key="attributedTitle">
+                            <fragment content="다음">
+                                <attributes>
+                                    <font key="NSFont" size="14" name="Times-Roman"/>
+                                </attributes>
+                            </fragment>
+                        </attributedString>
+                    </buttonConfiguration>
+                    <connections>
+                        <action selector="nextButtonClicked:" destination="-1" eventType="touchUpInside" id="i7O-X8-3Qr"/>
+                        <action selector="touchUpToNextButton:" destination="-1" eventType="touchUpInside" id="lxs-WN-RJE"/>
+                    </connections>
+                </button>
+                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" usesAttributedText="YES" lineBreakMode="wordWrap" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="7yB-DQ-8zc">
+                    <rect key="frame" x="181" y="159" width="52" height="31.5"/>
+                    <attributedString key="attributedText">
+                        <fragment>
+                            <string key="content">설명설명 
+설명설명</string>
+                            <attributes>
+                                <color key="NSColor" systemColor="secondaryLabelColor"/>
+                                <font key="NSFont" size="14" name="Times-Roman"/>
+                                <paragraphStyle key="NSParagraphStyle" alignment="center" lineBreakMode="wordWrapping" baseWritingDirection="natural" tighteningFactorForTruncation="0.0"/>
+                            </attributes>
+                        </fragment>
+                    </attributedString>
+                    <nil key="highlightedColor"/>
+                </label>
+            </subviews>
+            <viewLayoutGuide key="safeArea" id="vUN-kp-3ea"/>
+            <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+            <constraints>
+                <constraint firstItem="Za0-8Q-nXX" firstAttribute="top" secondItem="iN0-l3-epB" secondAttribute="top" constant="110" id="267-K9-QLi"/>
+                <constraint firstItem="vUN-kp-3ea" firstAttribute="trailing" secondItem="j2n-CZ-hXm" secondAttribute="trailing" constant="20" id="2AK-90-OQM"/>
+                <constraint firstItem="VbQ-l1-WKv" firstAttribute="leading" secondItem="vUN-kp-3ea" secondAttribute="leading" constant="20" id="2vk-yS-fZA"/>
+                <constraint firstItem="j2n-CZ-hXm" firstAttribute="top" secondItem="7yB-DQ-8zc" secondAttribute="bottom" constant="35" id="H5i-eZ-vaJ"/>
+                <constraint firstItem="Za0-8Q-nXX" firstAttribute="centerX" secondItem="vUN-kp-3ea" secondAttribute="centerX" id="Q3O-Wg-11Z"/>
+                <constraint firstItem="j2n-CZ-hXm" firstAttribute="leading" secondItem="vUN-kp-3ea" secondAttribute="leading" constant="20" id="fT8-kN-jHd"/>
+                <constraint firstItem="vUN-kp-3ea" firstAttribute="trailing" secondItem="VbQ-l1-WKv" secondAttribute="trailing" constant="20" id="jPr-6L-2CD"/>
+                <constraint firstItem="VbQ-l1-WKv" firstAttribute="top" secondItem="j2n-CZ-hXm" secondAttribute="bottom" constant="20" id="lXs-8f-a7P"/>
+                <constraint firstItem="7yB-DQ-8zc" firstAttribute="top" secondItem="Za0-8Q-nXX" secondAttribute="bottom" constant="20" id="muH-mA-RJa"/>
+                <constraint firstItem="7yB-DQ-8zc" firstAttribute="centerX" secondItem="vUN-kp-3ea" secondAttribute="centerX" id="xzE-nq-sgY"/>
+            </constraints>
+            <freeformSimulatedSizeMetrics key="simulatedDestinationMetrics"/>
+            <point key="canvasLocation" x="132" y="70"/>
+        </view>
+    </objects>
+    <resources>
+        <namedColor name="LightGray">
+            <color red="0.98039215686274506" green="0.98039215686274506" blue="0.98039215686274506" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+        </namedColor>
+        <systemColor name="secondaryLabelColor">
+            <color red="0.23529411764705882" green="0.23529411764705882" blue="0.2627450980392157" alpha="0.59999999999999998" colorSpace="custom" customColorSpace="sRGB"/>
+        </systemColor>
+        <systemColor name="systemBackgroundColor">
+            <color white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+        </systemColor>
+    </resources>
+</document>

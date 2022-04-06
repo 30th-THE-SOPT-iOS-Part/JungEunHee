@@ -15,10 +15,12 @@ class BaseViewController: UIViewController {
         super.viewDidLoad()
 
         viewHierarchy()
+        setLayout()
         setNavigation()
     }
     
     // MARK: - Functions
     public func viewHierarchy() { }
+    public func setLayout() { }
     public func setNavigation() { }
 }

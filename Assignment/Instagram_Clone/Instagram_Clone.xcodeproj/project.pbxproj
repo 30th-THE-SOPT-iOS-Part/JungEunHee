@@ -7,6 +7,12 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		F66CD5CC27FB8EC300ACBCD1 /* SignUpView.swift in Sources */ = {isa = PBXBuildFile; fileRef = F66CD5CB27FB8EC300ACBCD1 /* SignUpView.swift */; };
+		F66CD5DD27FD203500ACBCD1 /* SignUpView.xib in Resources */ = {isa = PBXBuildFile; fileRef = F66CD5DC27FD203500ACBCD1 /* SignUpView.xib */; };
+		F66CD5E127FD24DA00ACBCD1 /* SignUpFirstViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = F66CD5DF27FD24DA00ACBCD1 /* SignUpFirstViewController.swift */; };
+		F66CD5E227FD24DA00ACBCD1 /* SignUpFirstViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = F66CD5E027FD24DA00ACBCD1 /* SignUpFirstViewController.xib */; };
+		F66CD5E627FD2CA000ACBCD1 /* SignUpSecondViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = F66CD5E427FD2CA000ACBCD1 /* SignUpSecondViewController.swift */; };
+		F66CD5E727FD2CA000ACBCD1 /* SignUpSecondViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = F66CD5E527FD2CA000ACBCD1 /* SignUpSecondViewController.xib */; };
 		F69559B627FA9C8C005656AB /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = F69559B527FA9C8C005656AB /* AppDelegate.swift */; };
 		F69559B827FA9C8C005656AB /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = F69559B727FA9C8C005656AB /* SceneDelegate.swift */; };
 		F69559BA27FA9C8C005656AB /* SignInViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = F69559B927FA9C8C005656AB /* SignInViewController.swift */; };
@@ -37,6 +43,12 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		F66CD5CB27FB8EC300ACBCD1 /* SignUpView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SignUpView.swift; sourceTree = "<group>"; };
+		F66CD5DC27FD203500ACBCD1 /* SignUpView.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = SignUpView.xib; sourceTree = "<group>"; };
+		F66CD5DF27FD24DA00ACBCD1 /* SignUpFirstViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SignUpFirstViewController.swift; sourceTree = "<group>"; };
+		F66CD5E027FD24DA00ACBCD1 /* SignUpFirstViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = SignUpFirstViewController.xib; sourceTree = "<group>"; };
+		F66CD5E427FD2CA000ACBCD1 /* SignUpSecondViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SignUpSecondViewController.swift; sourceTree = "<group>"; };
+		F66CD5E527FD2CA000ACBCD1 /* SignUpSecondViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = SignUpSecondViewController.xib; sourceTree = "<group>"; };
 		F69559B227FA9C8C005656AB /* Instagram_Clone.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Instagram_Clone.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		F69559B527FA9C8C005656AB /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		F69559B727FA9C8C005656AB /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -218,6 +230,7 @@
 			children = (
 				F6955A1227FB7B41005656AB /* Common */,
 				F6955A1127FB7B02005656AB /* SignIn */,
+				F6955A1727FB8DFF005656AB /* SignUp */,
 			);
 			path = Presentation;
 			sourceTree = "<group>";
@@ -236,12 +249,29 @@
 			children = (
 				F69559D127FA9D75005656AB /* BaseViewController.swift */,
 				F6955A1327FB7B9E005656AB /* BlueButton.swift */,
+				F66CD5CB27FB8EC300ACBCD1 /* SignUpView.swift */,
+				F66CD5DC27FD203500ACBCD1 /* SignUpView.xib */,
 			);
 			path = Common;
 			sourceTree = "<group>";
 		};
+		F6955A1727FB8DFF005656AB /* SignUp */ = {
+			isa = PBXGroup;
+			children = (
+				F6955A1827FB8E08005656AB /* Controllers */,
 			);
-			path = Views;
+			path = SignUp;
+			sourceTree = "<group>";
+		};
+		F6955A1827FB8E08005656AB /* Controllers */ = {
+			isa = PBXGroup;
+			children = (
+				F66CD5E027FD24DA00ACBCD1 /* SignUpFirstViewController.xib */,
+				F66CD5DF27FD24DA00ACBCD1 /* SignUpFirstViewController.swift */,
+				F66CD5E527FD2CA000ACBCD1 /* SignUpSecondViewController.xib */,
+				F66CD5E427FD2CA000ACBCD1 /* SignUpSecondViewController.swift */,
+			);
+			path = Controllers;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -313,10 +343,13 @@
 				F69559E727FB0EF6005656AB /* SF-Pro-Display-Bold.otf in Resources */,
 				F6955A0D27FB444E005656AB /* Color.xcassets in Resources */,
 				F69559C227FA9C8E005656AB /* LaunchScreen.storyboard in Resources */,
+				F66CD5E227FD24DA00ACBCD1 /* SignUpFirstViewController.xib in Resources */,
 				F69559D827FAA339005656AB /* Image.xcassets in Resources */,
 				F69559E627FB0EF6005656AB /* SF-Pro-Display-Semibold.otf in Resources */,
 				F69559E127FB0DD2005656AB /* SF-Pro-Display-Regular.otf in Resources */,
+				F66CD5DD27FD203500ACBCD1 /* SignUpView.xib in Resources */,
 				F69559BF27FA9C8E005656AB /* Assets.xcassets in Resources */,
+				F66CD5E727FD2CA000ACBCD1 /* SignUpSecondViewController.xib in Resources */,
 				F69559E827FB0EF6005656AB /* SF-Pro-Display-Medium.otf in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -332,11 +365,13 @@
 				F69559BA27FA9C8C005656AB /* SignInViewController.swift in Sources */,
 				F69559F027FB1164005656AB /* Image.swift in Sources */,
 				F69559FE27FB1ACD005656AB /* UIView+NibCreatable.swift in Sources */,
+				F66CD5E627FD2CA000ACBCD1 /* SignUpSecondViewController.swift in Sources */,
 				F69559FC27FB18A2005656AB /* NibCreatable.swift in Sources */,
 				F69559F727FB15E5005656AB /* UIView+.swift in Sources */,
 				F6955A1627FB8131005656AB /* UITextField+.swift in Sources */,
 				F6955A0227FB1BBC005656AB /* Reusable.swift in Sources */,
 				F69559D227FA9D75005656AB /* BaseViewController.swift in Sources */,
+				F66CD5CC27FB8EC300ACBCD1 /* SignUpView.swift in Sources */,
 				F6955A0027FB1B62005656AB /* UIStackView+.swift in Sources */,
 				F6955A0727FB3677005656AB /* SignInView.swift in Sources */,
 				F6955A0427FB1EA1005656AB /* Color.swift in Sources */,
@@ -344,6 +379,7 @@
 				F69559B627FA9C8C005656AB /* AppDelegate.swift in Sources */,
 				F69559B827FA9C8C005656AB /* SceneDelegate.swift in Sources */,
 				F69559F227FB12BE005656AB /* Const.swift in Sources */,
+				F66CD5E127FD24DA00ACBCD1 /* SignUpFirstViewController.swift in Sources */,
 				F6955A1427FB7B9E005656AB /* BlueButton.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
