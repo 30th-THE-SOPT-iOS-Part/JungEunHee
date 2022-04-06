@@ -33,6 +33,6 @@ final class BlueButton: UIButton {
         makeRounded(radius: 8)
         setTitle(text, for: .normal)
         setTitleColor(Const.Color.white, for: .normal)
-        titleLabel?.font = UIFont(name: Const.Font.SFProDisplayMedium.rawValue, size: CGFloat(fontSize))
+        titleLabel?.font = UIFont(name: Const.Font.SFProDisplayBold.rawValue, size: CGFloat(fontSize))
     }
 }

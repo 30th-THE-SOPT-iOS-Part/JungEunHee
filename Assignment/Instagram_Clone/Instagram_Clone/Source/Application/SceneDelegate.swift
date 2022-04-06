@@ -19,6 +19,7 @@ class SceneDelegate: UIResponder, UIWindowSceneDelegate {
         window?.windowScene = windowScene
         window?.rootViewController = UINavigationController(rootViewController: SignInViewController.instanceFromNib())
         window?.makeKeyAndVisible()
+        window?.backgroundColor = Const.Color.white
     }
 }
 

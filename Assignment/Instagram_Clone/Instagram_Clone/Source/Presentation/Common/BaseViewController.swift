@@ -14,13 +14,15 @@ class BaseViewController: UIViewController {
     override func viewDidLoad() {
         super.viewDidLoad()
 
-        viewHierarchy()
+        setHierarchy()
         setLayout()
         setNavigation()
+        setTargets()
     }
     
     // MARK: - Functions
-    public func viewHierarchy() { }
+    public func setHierarchy() { }
     public func setLayout() { }
     public func setNavigation() { }
+    public func setTargets() { }
 }
