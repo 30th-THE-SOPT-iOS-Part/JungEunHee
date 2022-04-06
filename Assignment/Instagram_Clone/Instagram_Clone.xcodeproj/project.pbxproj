@@ -257,10 +257,10 @@
 		F6955A1027FB7AEF005656AB /* Presentation */ = {
 			isa = PBXGroup;
 			children = (
-				F66CD5E827FD5DF500ACBCD1 /* Welcome */,
 				F6955A1227FB7B41005656AB /* Common */,
 				F6955A1127FB7B02005656AB /* SignIn */,
 				F6955A1727FB8DFF005656AB /* SignUp */,
+				F66CD5E827FD5DF500ACBCD1 /* Welcome */,
 			);
 			path = Presentation;
 			sourceTree = "<group>";

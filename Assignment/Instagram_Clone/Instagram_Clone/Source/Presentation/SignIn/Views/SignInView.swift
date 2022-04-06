@@ -10,28 +10,38 @@ import UIKit
 import SnapKit
 import Then
 
-class SignInView: UIView {
+final class SignInView: UIView {
     
     // MARK: - Properties
     private let logoImageView = UIImageView().then {
         $0.contentMode = .scaleAspectFit
         $0.image = Const.Image.icInstagramBlackLogo
     }
-    private let idTextField = UITextField().then {
+    public let idTextField = UITextField().then {
+        $0.autocapitalizationType = .none
+        $0.autocorrectionType = .no
         $0.backgroundColor = Const.Color.lightGray
         $0.borderStyle = .roundedRect
+        $0.clearButtonMode = .whileEditing
         $0.setLeftPadding(amount: 10)
         $0.setRightPadding(amount: 10)
+        $0.spellCheckingType = .no
+        $0.placeholder = "전화번호, 사용자 이름 또는 이메일"
     }
-    private let passwordTextField = UITextField().then {
+    public let passwordTextField = UITextField().then {
+        $0.autocapitalizationType = .none
+        $0.autocorrectionType = .no
         $0.backgroundColor = Const.Color.lightGray
         $0.borderStyle = .roundedRect
+        $0.isSecureTextEntry = true
         $0.setLeftPadding(amount: 10)
-        $0.setRightPadding(amount: 10)
+        $0.setRightPadding(amount: 30)
+        $0.spellCheckingType = .no
+        $0.placeholder = "비밀번호"
     }
-    private let hideImageView = UIImageView().then {
+    public let hideButton = UIButton().then {
         $0.contentMode = .scaleAspectFit
-        $0.image = Const.Image.icPasswordHiddenEye
+        $0.setImage(Const.Image.icPasswordHiddenEye, for: .normal)
         $0.tintColor = Const.Color.lightGray
     }
     private let inputStackView = UIStackView().then {
@@ -45,18 +55,18 @@ class SignInView: UIView {
         $0.textAlignment = .right
         $0.textColor = UIColor(cgColor: Const.Color.blue.cgColor)
     }
-    private let signInButton = BlueButton.init(frame: CGRect(), text: "로그인", fontSize: 10)
+    public let signInButton = BlueButton.init(frame: CGRect(), text: "로그인", fontSize: 10).then {
+        $0.isEnabled = false
+    }
     private let authHelpLabel = UILabel().then {
         $0.font = UIFont(name: Const.Font.SFProDisplayMedium.rawValue, size: 10)
         $0.sizeToFit()
         $0.text = "계정이 없으신가요?"
         $0.textColor = UIColor(cgColor: Const.Color.darkGray.cgColor)
     }
-    private let signUpLabel = UILabel().then {
-        $0.font = UIFont(name: Const.Font.SFProDisplayMedium.rawValue, size: 10)
-        $0.sizeToFit()
-        $0.text = "가입하기"
-        $0.textColor = UIColor(cgColor: Const.Color.blue.cgColor)
+    public let signUpButton = UIButton().then {
+        $0.setTitle("가입하기", for: .normal)
+        $0.setTitleColor(UIColor(cgColor: Const.Color.blue.cgColor), for: .normal)
     }
     private let signUpHelpStack = UIStackView().then {
         $0.axis = .horizontal
@@ -79,12 +89,11 @@ class SignInView: UIView {
     
     // MARK: - Functions
     private func setUI() {
-        [logoImageView, inputStackView, hideImageView, passwordHelpLabel, signInButton, signUpHelpStack].forEach {
+        [logoImageView, inputStackView, hideButton, passwordHelpLabel, signInButton, signUpHelpStack].forEach {
             addSubview($0)
         }
         inputStackView.addArrangedSubviews(idTextField, passwordTextField)
-        signUpHelpStack.addArrangedSubviews(authHelpLabel, signUpLabel)
-        self.backgroundColor = Const.Color.white
+        signUpHelpStack.addArrangedSubviews(authHelpLabel, signUpButton)
     }
     
     private func setConstraints() {
@@ -95,15 +104,10 @@ class SignInView: UIView {
             $0.top.equalToSuperview().offset(150)
             $0.leading.equalToSuperview().offset(100)
         }
-        // MARK: - 과제
-        // 🍋 심화과제 1-1. 눈 모양 아이콘 UI 구성
-        hideImageView.snp.makeConstraints {
+        hideButton.snp.makeConstraints {
             $0.width.height.equalTo(25)
             $0.centerY.equalTo(passwordTextField)
             $0.bottom.trailing.equalTo(inputStackView).inset(12)
-        }
-        idTextField.snp.makeConstraints {
-            $0.height.equalTo(55)
         }
         inputStackView.snp.makeConstraints {
             $0.width.equalTo(335)
@@ -124,11 +128,11 @@ class SignInView: UIView {
             $0.leading.equalToSuperview().offset(20)
         }
         signUpHelpStack.snp.makeConstraints {
-            $0.width.equalTo(UIScreen.main.bounds.width - 200)
+            $0.width.equalTo(UIScreen.main.bounds.width - 220)
             $0.height.equalTo(30)
             $0.centerX.equalToSuperview()
             $0.top.equalTo(signInButton.snp.bottom).offset(40)
-            $0.leading.equalToSuperview().offset(90)
+            $0.leading.equalToSuperview().offset(85)
         }
     }
 }

@@ -60,7 +60,6 @@
                         </attributedString>
                     </buttonConfiguration>
                     <connections>
-                        <action selector="nextButtonClicked:" destination="-1" eventType="touchUpInside" id="i7O-X8-3Qr"/>
                         <action selector="touchUpToNextButton:" destination="-1" eventType="touchUpInside" id="lxs-WN-RJE"/>
                     </connections>
                 </button>
@@ -79,6 +78,18 @@
                     </attributedString>
                     <nil key="highlightedColor"/>
                 </label>
+                <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="bEP-Mg-l9v">
+                    <rect key="frame" x="10" y="10" width="45" height="45"/>
+                    <constraints>
+                        <constraint firstAttribute="height" constant="45" id="0dk-Kr-LmF"/>
+                        <constraint firstAttribute="width" constant="45" id="mlS-TG-Uwl"/>
+                    </constraints>
+                    <inset key="imageEdgeInsets" minX="0.0" minY="0.0" maxX="2.2250738585072014e-308" maxY="0.0"/>
+                    <state key="normal" title="Button" image="icn_back_24"/>
+                    <connections>
+                        <action selector="touchUpToBackButton:" destination="-1" eventType="touchUpInside" id="vwP-mb-r6S"/>
+                    </connections>
+                </button>
             </subviews>
             <viewLayoutGuide key="safeArea" id="vUN-kp-3ea"/>
             <color key="backgroundColor" systemColor="systemBackgroundColor"/>
@@ -87,18 +98,21 @@
                 <constraint firstItem="vUN-kp-3ea" firstAttribute="trailing" secondItem="j2n-CZ-hXm" secondAttribute="trailing" constant="20" id="2AK-90-OQM"/>
                 <constraint firstItem="VbQ-l1-WKv" firstAttribute="leading" secondItem="vUN-kp-3ea" secondAttribute="leading" constant="20" id="2vk-yS-fZA"/>
                 <constraint firstItem="j2n-CZ-hXm" firstAttribute="top" secondItem="7yB-DQ-8zc" secondAttribute="bottom" constant="35" id="H5i-eZ-vaJ"/>
+                <constraint firstItem="bEP-Mg-l9v" firstAttribute="top" secondItem="iN0-l3-epB" secondAttribute="top" constant="10" id="OE1-do-g59"/>
                 <constraint firstItem="Za0-8Q-nXX" firstAttribute="centerX" secondItem="vUN-kp-3ea" secondAttribute="centerX" id="Q3O-Wg-11Z"/>
                 <constraint firstItem="j2n-CZ-hXm" firstAttribute="leading" secondItem="vUN-kp-3ea" secondAttribute="leading" constant="20" id="fT8-kN-jHd"/>
                 <constraint firstItem="vUN-kp-3ea" firstAttribute="trailing" secondItem="VbQ-l1-WKv" secondAttribute="trailing" constant="20" id="jPr-6L-2CD"/>
                 <constraint firstItem="VbQ-l1-WKv" firstAttribute="top" secondItem="j2n-CZ-hXm" secondAttribute="bottom" constant="20" id="lXs-8f-a7P"/>
                 <constraint firstItem="7yB-DQ-8zc" firstAttribute="top" secondItem="Za0-8Q-nXX" secondAttribute="bottom" constant="20" id="muH-mA-RJa"/>
+                <constraint firstItem="bEP-Mg-l9v" firstAttribute="leading" secondItem="iN0-l3-epB" secondAttribute="leading" constant="10" id="soe-HW-w1B"/>
                 <constraint firstItem="7yB-DQ-8zc" firstAttribute="centerX" secondItem="vUN-kp-3ea" secondAttribute="centerX" id="xzE-nq-sgY"/>
             </constraints>
             <freeformSimulatedSizeMetrics key="simulatedDestinationMetrics"/>
-            <point key="canvasLocation" x="132" y="70"/>
+            <point key="canvasLocation" x="131.8840579710145" y="69.642857142857139"/>
         </view>
     </objects>
     <resources>
+        <image name="icn_back_24" width="24.5" height="24"/>
         <namedColor name="LightGray">
             <color red="0.98039215686274506" green="0.98039215686274506" blue="0.98039215686274506" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
         </namedColor>

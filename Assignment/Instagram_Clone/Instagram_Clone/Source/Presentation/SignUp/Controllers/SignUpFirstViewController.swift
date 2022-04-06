@@ -40,6 +40,11 @@ final class SignUpFirstViewController: BaseViewController {
 }
 
 extension SignUpFirstViewController: SignUpViewDelegate {
-    func nextButtonClicked() {
+    internal func dismissButtonClicked() {
+        self.navigationController?.popViewController(animated: true)
+    }
+    internal func nextButtonClicked() {
+        let nextVC = SignUpSecondViewController.instanceFromNib()
+        self.navigationController?.pushViewController(nextVC, animated: true)
     }
 }

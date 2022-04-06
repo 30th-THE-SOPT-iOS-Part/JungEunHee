@@ -7,10 +7,17 @@
 
 import UIKit
 
+protocol SignUpViewDelegate {
+    func nextButtonClicked()
+    func dismissButtonClicked()
+}
+
 class SignUpView: UIView {
     
+    // MARK: - Properties
+    public var delegate: SignUpViewDelegate?
+    
     // MARK: - @IBOutlet Properties
-    var delegate: SignUpViewDelegate?
     @IBOutlet weak var titleLabel: UILabel!
     @IBOutlet weak var descriptionLabel: UILabel!
     @IBOutlet weak var inputTextField: UITextField!
@@ -29,4 +36,15 @@ class SignUpView: UIView {
         self.addSubview(signUpView)
     }
     
+    // MARK: - @IBAction Properties
+    @IBAction func touchUpToBackButton(_ sender: UIButton) {
+        if let delegate = delegate {
+            delegate.dismissButtonClicked()
+        }
+    }
+    @IBAction func touchUpToNextButton(_ sender: UIButton) {
+        if let delegate = delegate {
+            delegate.nextButtonClicked()
+        }
+    }
 }
