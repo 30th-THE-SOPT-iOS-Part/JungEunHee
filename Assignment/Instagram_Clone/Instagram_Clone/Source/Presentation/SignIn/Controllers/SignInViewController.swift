@@ -30,6 +30,9 @@ final class SignInViewController: BaseViewController {
         }
         signInView.signInButton.addTarget(self, action: #selector(signInButtonClicked), for: .touchUpInside)
         signInView.signUpButton.addTarget(self, action: #selector(signUpButtonClicked), for: .touchUpInside)
+        [signInView.passwordTextField, signInView.hideButton].forEach {
+            $0.addTarget(self, action: #selector(hideButtonClicked), for: .touchUpInside)
+        }
     }
     
     @objc
@@ -53,5 +56,11 @@ final class SignInViewController: BaseViewController {
     private func signUpButtonClicked() {
         let nextVC = SignUpFirstViewController.instanceFromNib()
         self.navigationController?.pushViewController(nextVC, animated: true)
+    }
+    
+    @objc
+    private func hideButtonClicked() {
+        signInView.passwordTextField.isSecureTextEntry ? signInView.hideButton.setImage(Const.Image.icPasswordHiddenEye, for: .normal) : signInView.hideButton.setImage(Const.Image.icPasswordShownEye, for: .normal)
+        signInView.passwordTextField.isSecureTextEntry = !(signInView.passwordTextField.isSecureTextEntry)
     }
 }
