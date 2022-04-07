@@ -6,7 +6,6 @@
 //
 
 import UIKit.UIColor
-import UIKit
 
 extension Const {
     public enum Color {

@@ -43,25 +43,23 @@ final class WelcomeView: UIView {
     
     // MARK: - Functions
     private func setUI() {
-        [welcomeLabel, descriptionLabel, doneButton].forEach {
-            addSubview($0)
-        }
+        addSubviews(welcomeLabel, descriptionLabel, doneButton)
     }
     
     private func setConstraints() {
         welcomeLabel.snp.makeConstraints {
             $0.width.equalTo(UIScreen.main.bounds.width - 40)
             $0.centerX.equalToSuperview()
-            $0.top.equalTo(safeAreaLayoutGuide).offset(200)
+            $0.top.equalTo(safeAreaLayoutGuide).offset(250)
         }
         descriptionLabel.snp.makeConstraints {
-            $0.width.equalTo(UIScreen.main.bounds.width - 25)
+            $0.width.equalTo(UIScreen.main.bounds.width - 35)
             $0.centerX.equalToSuperview()
             $0.top.equalTo(welcomeLabel.snp.bottom).inset(-20)
         }
         doneButton.snp.makeConstraints {
-            $0.width.equalTo(UIScreen.main.bounds.width - 20)
-            $0.height.equalTo(45)
+            $0.width.equalTo(UIScreen.main.bounds.width - 30)
+            $0.height.equalTo(55)
             $0.centerX.equalToSuperview()
             $0.top.equalTo(descriptionLabel.snp.bottom).inset(-20)
         }

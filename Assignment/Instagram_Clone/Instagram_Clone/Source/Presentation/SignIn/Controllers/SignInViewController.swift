@@ -15,8 +15,6 @@ final class SignInViewController: BaseViewController {
     // MARK: - View Life Cycle
     override func viewDidLoad() {
         super.viewDidLoad()
-        
-        touchUpToGoSignUpView()
     }
 
     override func loadView() {
@@ -27,15 +25,19 @@ final class SignInViewController: BaseViewController {
     override func setTargets() {
         super.setTargets()
         
-        [signInView.idTextField, signInView.passwordTextField].forEach {
+        [signInView.signUpButton, signInView.idTextField, signInView.passwordTextField].forEach {
             $0.addTarget(self, action: #selector(textFieldDidChanged(_:)), for: .editingChanged)
         }
-        signInView.signUpButton.addTarget(self, action: #selector(signInButtonClicked), for: .touchUpInside)
+        signInView.signInButton.addTarget(self, action: #selector(signInButtonClicked), for: .touchUpInside)
+        signInView.signUpButton.addTarget(self, action: #selector(signUpButtonClicked), for: .touchUpInside)
     }
     
     @objc
     private func textFieldDidChanged(_ textField: UITextField) {
-        signInView.signUpButton.isEnabled = (signInView.idTextField.hasText || signInView.passwordTextField.hasText) ? true : false
+        signInView.signUpButton.isEnabled = false
+        if signInView.idTextField.hasText || signInView.passwordTextField.hasText {
+            signInView.signUpButton.isEnabled.toggle()
+        }
     }
     
     @objc
@@ -47,7 +49,8 @@ final class SignInViewController: BaseViewController {
         self.present(nextVC, animated: true)
     }
     
-    private func touchUpToGoSignUpView() {
+    @objc
+    private func signUpButtonClicked() {
         let nextVC = SignUpFirstViewController.instanceFromNib()
         self.navigationController?.pushViewController(nextVC, animated: true)
     }

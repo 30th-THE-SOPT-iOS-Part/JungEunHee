@@ -55,9 +55,7 @@ final class SignInView: UIView {
         $0.textAlignment = .right
         $0.textColor = UIColor(cgColor: Const.Color.blue.cgColor)
     }
-    public let signInButton = BlueButton.init(frame: CGRect(), text: "로그인", fontSize: 10).then {
-        $0.isEnabled = false
-    }
+    public let signInButton = BlueButton.init(frame: CGRect(), text: "로그인", fontSize: 10)
     private let authHelpLabel = UILabel().then {
         $0.font = UIFont(name: Const.Font.SFProDisplayMedium.rawValue, size: 10)
         $0.sizeToFit()
@@ -89,9 +87,7 @@ final class SignInView: UIView {
     
     // MARK: - Functions
     private func setUI() {
-        [logoImageView, inputStackView, hideButton, passwordHelpLabel, signInButton, signUpHelpStack].forEach {
-            addSubview($0)
-        }
+       addSubviews(logoImageView, inputStackView, hideButton, passwordHelpLabel, signInButton, signUpHelpStack)
         inputStackView.addArrangedSubviews(idTextField, passwordTextField)
         signUpHelpStack.addArrangedSubviews(authHelpLabel, signUpButton)
     }
