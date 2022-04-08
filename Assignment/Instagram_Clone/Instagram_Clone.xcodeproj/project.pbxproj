@@ -106,18 +106,18 @@
 		F66CD5E827FD5DF500ACBCD1 /* Welcome */ = {
 			isa = PBXGroup;
 			children = (
-				F66CD5ED27FD5E2000ACBCD1 /* Viws */,
+				F66CD5ED27FD5E2000ACBCD1 /* Views */,
 				F66CD5EE27FD5E2600ACBCD1 /* Controllers */,
 			);
 			path = Welcome;
 			sourceTree = "<group>";
 		};
-		F66CD5ED27FD5E2000ACBCD1 /* Viws */ = {
+		F66CD5ED27FD5E2000ACBCD1 /* Views */ = {
 			isa = PBXGroup;
 			children = (
 				F66CD5EB27FD5E1C00ACBCD1 /* WelcomeView.swift */,
 			);
-			path = Viws;
+			path = Views;
 			sourceTree = "<group>";
 		};
 		F66CD5EE27FD5E2600ACBCD1 /* Controllers */ = {
