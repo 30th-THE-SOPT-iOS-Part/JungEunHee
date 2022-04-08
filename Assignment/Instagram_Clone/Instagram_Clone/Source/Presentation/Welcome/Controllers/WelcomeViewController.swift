@@ -16,6 +16,8 @@ final class WelcomeViewController: BaseViewController {
     // MARK: - View Life Cycle
     override func viewDidLoad() {
         super.viewDidLoad()
+        
+        setUserName()
     }
     
     override func loadView() {
