@@ -64,7 +64,7 @@
 		F67903A6280149D9009157E8 = {
 			isa = PBXGroup;
 			children = (
-				F67903B1280149DA009157E8 /* Seond_Seminar */,
+				F67903B1280149DA009157E8 /* Second_Seminar */,
 				F67903B0280149DA009157E8 /* Products */,
 			);
 			sourceTree = "<group>";
@@ -77,14 +77,13 @@
 			name = Products;
 			sourceTree = "<group>";
 		};
-		F67903B1280149DA009157E8 /* Seond_Seminar */ = {
+		F67903B1280149DA009157E8 /* Second_Seminar */ = {
 			isa = PBXGroup;
 			children = (
 				F67903C7280149E6009157E8 /* Resource */,
 				F67903C6280149E1009157E8 /* Source */,
 				F67903C0280149DB009157E8 /* Info.plist */,
 			);
-			name = Seond_Seminar;
 			path = Second_Seminar;
 			sourceTree = "<group>";
 		};
