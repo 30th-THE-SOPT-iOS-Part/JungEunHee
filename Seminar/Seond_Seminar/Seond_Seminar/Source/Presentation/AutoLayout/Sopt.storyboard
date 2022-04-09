@@ -1,0 +1,66 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="19529" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="Y6W-OH-hqX">
+    <device id="retina6_1" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="19519"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <scenes>
+        <!--View Controller-->
+        <scene sceneID="s0d-6b-0kx">
+            <objects>
+                <viewController id="Y6W-OH-hqX" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="5EZ-qb-Rvc">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="img_bg" translatesAutoresizingMaskIntoConstraints="NO" id="Sdu-6m-PME">
+                                <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                            </imageView>
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="icn_lock" translatesAutoresizingMaskIntoConstraints="NO" id="1xO-fA-dDa">
+                                <rect key="frame" x="189" y="62" width="36" height="36"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" secondItem="1xO-fA-dDa" secondAttribute="height" multiplier="1:1" id="Dij-5A-Ol9"/>
+                                    <constraint firstAttribute="width" constant="36" id="vvh-v3-S52"/>
+                                </constraints>
+                            </imageView>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="12 : 01" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="jNU-GV-1u5">
+                                <rect key="frame" x="112.5" y="104" width="189" height="84"/>
+                                <fontDescription key="fontDescription" name=".AppleSystemUIFont" family=".AppleSystemUIFont" pointSize="70"/>
+                                <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="4월 9일 토요일" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="ngc-bK-MO0">
+                                <rect key="frame" x="140.5" y="194" width="133" height="27"/>
+                                <fontDescription key="fontDescription" name=".AppleSystemUIFont" family=".AppleSystemUIFont" pointSize="22"/>
+                                <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                        </subviews>
+                        <viewLayoutGuide key="safeArea" id="vDu-zF-Fre"/>
+                        <color key="backgroundColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <constraints>
+                            <constraint firstItem="ngc-bK-MO0" firstAttribute="top" secondItem="jNU-GV-1u5" secondAttribute="bottom" constant="6" id="9d4-Gk-czD"/>
+                            <constraint firstAttribute="trailing" secondItem="Sdu-6m-PME" secondAttribute="trailing" id="E5S-uq-DKV"/>
+                            <constraint firstItem="jNU-GV-1u5" firstAttribute="top" secondItem="5EZ-qb-Rvc" secondAttribute="top" constant="104" id="F6B-GH-UYG"/>
+                            <constraint firstItem="1xO-fA-dDa" firstAttribute="centerX" secondItem="vDu-zF-Fre" secondAttribute="centerX" id="GnF-q1-Hbr"/>
+                            <constraint firstItem="Sdu-6m-PME" firstAttribute="leading" secondItem="5EZ-qb-Rvc" secondAttribute="leading" id="MKY-50-ln9"/>
+                            <constraint firstAttribute="bottom" secondItem="Sdu-6m-PME" secondAttribute="bottom" id="XFP-Cx-zRt"/>
+                            <constraint firstItem="ngc-bK-MO0" firstAttribute="centerX" secondItem="vDu-zF-Fre" secondAttribute="centerX" id="eBa-Yo-cnl"/>
+                            <constraint firstItem="1xO-fA-dDa" firstAttribute="top" secondItem="5EZ-qb-Rvc" secondAttribute="top" constant="62" id="ea3-dp-8Qs"/>
+                            <constraint firstItem="Sdu-6m-PME" firstAttribute="top" secondItem="5EZ-qb-Rvc" secondAttribute="top" id="uei-E0-Mwz"/>
+                            <constraint firstItem="jNU-GV-1u5" firstAttribute="centerX" secondItem="vDu-zF-Fre" secondAttribute="centerX" id="vVg-nr-uvs"/>
+                        </constraints>
+                    </view>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="Ief-a0-LHa" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="130" y="51"/>
+        </scene>
+    </scenes>
+    <resources>
+        <image name="icn_lock" width="36" height="36"/>
+        <image name="img_bg" width="375" height="812"/>
+    </resources>
+</document>
