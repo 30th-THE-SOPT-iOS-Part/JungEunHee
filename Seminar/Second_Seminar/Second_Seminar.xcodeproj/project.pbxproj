@@ -28,7 +28,7 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
-		F67903AF280149DA009157E8 /* Seond_Seminar.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Seond_Seminar.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		F67903AF280149DA009157E8 /* Second_Seminar.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Second_Seminar.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		F67903B2280149DA009157E8 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		F67903B4280149DA009157E8 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
 		F67903B6280149DA009157E8 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
@@ -72,7 +72,7 @@
 		F67903B0280149DA009157E8 /* Products */ = {
 			isa = PBXGroup;
 			children = (
-				F67903AF280149DA009157E8 /* Seond_Seminar.app */,
+				F67903AF280149DA009157E8 /* Second_Seminar.app */,
 			);
 			name = Products;
 			sourceTree = "<group>";
@@ -84,7 +84,8 @@
 				F67903C6280149E1009157E8 /* Source */,
 				F67903C0280149DB009157E8 /* Info.plist */,
 			);
-			path = Seond_Seminar;
+			name = Seond_Seminar;
+			path = Second_Seminar;
 			sourceTree = "<group>";
 		};
 		F67903C6280149E1009157E8 /* Source */ = {
@@ -202,9 +203,9 @@
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
-		F67903AE280149DA009157E8 /* Seond_Seminar */ = {
+		F67903AE280149DA009157E8 /* Second_Seminar */ = {
 			isa = PBXNativeTarget;
-			buildConfigurationList = F67903C3280149DB009157E8 /* Build configuration list for PBXNativeTarget "Seond_Seminar" */;
+			buildConfigurationList = F67903C3280149DB009157E8 /* Build configuration list for PBXNativeTarget "Second_Seminar" */;
 			buildPhases = (
 				F67903AB280149DA009157E8 /* Sources */,
 				F67903AC280149DA009157E8 /* Frameworks */,
@@ -214,9 +215,9 @@
 			);
 			dependencies = (
 			);
-			name = Seond_Seminar;
+			name = Second_Seminar;
 			productName = Seond_Seminar;
-			productReference = F67903AF280149DA009157E8 /* Seond_Seminar.app */;
+			productReference = F67903AF280149DA009157E8 /* Second_Seminar.app */;
 			productType = "com.apple.product-type.application";
 		};
 /* End PBXNativeTarget section */
@@ -234,7 +235,7 @@
 					};
 				};
 			};
-			buildConfigurationList = F67903AA280149D9009157E8 /* Build configuration list for PBXProject "Seond_Seminar" */;
+			buildConfigurationList = F67903AA280149D9009157E8 /* Build configuration list for PBXProject "Second_Seminar" */;
 			compatibilityVersion = "Xcode 13.0";
 			developmentRegion = en;
 			hasScannedForEncodings = 0;
@@ -247,7 +248,7 @@
 			projectDirPath = "";
 			projectRoot = "";
 			targets = (
-				F67903AE280149DA009157E8 /* Seond_Seminar */,
+				F67903AE280149DA009157E8 /* Second_Seminar */,
 			);
 		};
 /* End PBXProject section */
@@ -435,7 +436,7 @@
 				CURRENT_PROJECT_VERSION = 1;
 				DEVELOPMENT_TEAM = RS46GZF8TU;
 				GENERATE_INFOPLIST_FILE = YES;
-				INFOPLIST_FILE = Seond_Seminar/Info.plist;
+				INFOPLIST_FILE = Second_Seminar/Info.plist;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchStoryboardName = LaunchScreen;
 				INFOPLIST_KEY_UIMainStoryboardFile = StackView;
@@ -446,7 +447,7 @@
 					"@executable_path/Frameworks",
 				);
 				MARKETING_VERSION = 1.0;
-				PRODUCT_BUNDLE_IDENTIFIER = "sopt.org.Seond-Seminar";
+				PRODUCT_BUNDLE_IDENTIFIER = "sopt.org.Second-Seminar";
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_EMIT_LOC_STRINGS = YES;
 				SWIFT_VERSION = 5.0;
@@ -463,7 +464,7 @@
 				CURRENT_PROJECT_VERSION = 1;
 				DEVELOPMENT_TEAM = RS46GZF8TU;
 				GENERATE_INFOPLIST_FILE = YES;
-				INFOPLIST_FILE = Seond_Seminar/Info.plist;
+				INFOPLIST_FILE = Second_Seminar/Info.plist;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchStoryboardName = LaunchScreen;
 				INFOPLIST_KEY_UIMainStoryboardFile = StackView;
@@ -474,7 +475,7 @@
 					"@executable_path/Frameworks",
 				);
 				MARKETING_VERSION = 1.0;
-				PRODUCT_BUNDLE_IDENTIFIER = "sopt.org.Seond-Seminar";
+				PRODUCT_BUNDLE_IDENTIFIER = "sopt.org.Second-Seminar";
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_EMIT_LOC_STRINGS = YES;
 				SWIFT_VERSION = 5.0;
@@ -485,7 +486,7 @@
 /* End XCBuildConfiguration section */
 
 /* Begin XCConfigurationList section */
-		F67903AA280149D9009157E8 /* Build configuration list for PBXProject "Seond_Seminar" */ = {
+		F67903AA280149D9009157E8 /* Build configuration list for PBXProject "Second_Seminar" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
 				F67903C1280149DB009157E8 /* Debug */,
@@ -494,7 +495,7 @@
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
 		};
-		F67903C3280149DB009157E8 /* Build configuration list for PBXNativeTarget "Seond_Seminar" */ = {
+		F67903C3280149DB009157E8 /* Build configuration list for PBXNativeTarget "Second_Seminar" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
 				F67903C4280149DB009157E8 /* Debug */,
