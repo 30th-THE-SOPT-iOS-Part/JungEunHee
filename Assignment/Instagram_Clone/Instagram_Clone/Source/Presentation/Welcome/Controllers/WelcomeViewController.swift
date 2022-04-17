@@ -33,7 +33,9 @@ final class WelcomeViewController: BaseViewController {
     
     @objc
     private func addDissmiss() {
-        self.dismiss(animated: true)
+        self.dismiss(animated: true) {
+            self.navigationController?.popToRootViewController(animated: true)
+        }
     }
     
     private func setUserName() {
@@ -43,6 +45,5 @@ final class WelcomeViewController: BaseViewController {
             오신 것을 환영합니다
             """
         }
-        welcomeView.welcomeLabel.sizeToFit()
     }
 }
