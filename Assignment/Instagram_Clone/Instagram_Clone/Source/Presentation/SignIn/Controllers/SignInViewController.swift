@@ -11,14 +11,14 @@ final class SignInViewController: BaseViewController {
     
     // MARK: - Properties
     private let signInView = SignInView()
-
+    
     // MARK: - View Life Cycle
-    override func viewDidLoad() {
-        super.viewDidLoad()
-    }
-
     override func loadView() {
         view = signInView
+    }
+    
+    override func viewDidLoad() {
+        super.viewDidLoad()
     }
     
     // MARK: - Functions
@@ -37,10 +37,7 @@ final class SignInViewController: BaseViewController {
     
     @objc
     private func textFieldDidChanged(_ textField: UITextField) {
-        signInView.signUpButton.isEnabled = false
-        if signInView.idTextField.hasText || signInView.passwordTextField.hasText {
-            signInView.signUpButton.isEnabled.toggle()
-        }
+        signInView.signUpButton.isEnabled = [signInView.idTextField, signInView.passwordTextField].allSatisfy { $0.hasText }
     }
     
     @objc
@@ -60,7 +57,9 @@ final class SignInViewController: BaseViewController {
     
     @objc
     private func hideButtonClicked() {
-        signInView.passwordTextField.isSecureTextEntry ? signInView.hideButton.setImage(Const.Image.icPasswordHiddenEye, for: .normal) : signInView.hideButton.setImage(Const.Image.icPasswordShownEye, for: .normal)
+        signInView.passwordTextField.isSecureTextEntry ?
+        signInView.hideButton.setImage(Const.Image.icPasswordShownEye, for: .normal) :
+        signInView.hideButton.setImage(Const.Image.icPasswordHiddenEye, for: .normal)
         signInView.passwordTextField.isSecureTextEntry = !(signInView.passwordTextField.isSecureTextEntry)
     }
 }

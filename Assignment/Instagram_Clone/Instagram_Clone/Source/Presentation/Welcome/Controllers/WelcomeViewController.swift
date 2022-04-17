@@ -14,14 +14,14 @@ final class WelcomeViewController: BaseViewController {
     public var userName: String?
 
     // MARK: - View Life Cycle
+    override func loadView() {
+        view = welcomeView
+    }
+    
     override func viewDidLoad() {
         super.viewDidLoad()
         
         setUserName()
-    }
-    
-    override func loadView() {
-        view = welcomeView
     }
     
     // MARK: - Functions

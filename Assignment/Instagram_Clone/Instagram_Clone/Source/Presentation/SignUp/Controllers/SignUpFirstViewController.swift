@@ -20,14 +20,15 @@ final class SignUpFirstViewController: BaseViewController {
     }
     
     // MARK: - Functions
-    override func setLayout() {
+    override func setStyle() {
+        super.setStyle()
+        
         reusableView.titleLabel.text = "사용자 이름 만들기"
         reusableView.descriptionLabel.text = """
         새 계정에 사용할 사용자 이름을 선택하세요. 나중에
         언제든지 변경할 수 있습니다.
         """
         reusableView.inputTextField.placeholder = "사용자 이름"
-        super.setLayout()
     }
     
     private func assignDelegation() {
