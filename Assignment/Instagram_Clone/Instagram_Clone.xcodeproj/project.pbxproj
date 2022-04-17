@@ -1,0 +1,659 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 55;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		F66CD5CC27FB8EC300ACBCD1 /* SignUpView.swift in Sources */ = {isa = PBXBuildFile; fileRef = F66CD5CB27FB8EC300ACBCD1 /* SignUpView.swift */; };
+		F66CD5DD27FD203500ACBCD1 /* SignUpView.xib in Resources */ = {isa = PBXBuildFile; fileRef = F66CD5DC27FD203500ACBCD1 /* SignUpView.xib */; };
+		F66CD5E127FD24DA00ACBCD1 /* SignUpFirstViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = F66CD5DF27FD24DA00ACBCD1 /* SignUpFirstViewController.swift */; };
+		F66CD5E227FD24DA00ACBCD1 /* SignUpFirstViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = F66CD5E027FD24DA00ACBCD1 /* SignUpFirstViewController.xib */; };
+		F66CD5E627FD2CA000ACBCD1 /* SignUpSecondViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = F66CD5E427FD2CA000ACBCD1 /* SignUpSecondViewController.swift */; };
+		F66CD5E727FD2CA000ACBCD1 /* SignUpSecondViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = F66CD5E527FD2CA000ACBCD1 /* SignUpSecondViewController.xib */; };
+		F66CD5EA27FD5E0D00ACBCD1 /* WelcomeViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = F66CD5E927FD5E0D00ACBCD1 /* WelcomeViewController.swift */; };
+		F66CD5EC27FD5E1C00ACBCD1 /* WelcomeView.swift in Sources */ = {isa = PBXBuildFile; fileRef = F66CD5EB27FD5E1C00ACBCD1 /* WelcomeView.swift */; };
+		F69559B627FA9C8C005656AB /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = F69559B527FA9C8C005656AB /* AppDelegate.swift */; };
+		F69559B827FA9C8C005656AB /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = F69559B727FA9C8C005656AB /* SceneDelegate.swift */; };
+		F69559BA27FA9C8C005656AB /* SignInViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = F69559B927FA9C8C005656AB /* SignInViewController.swift */; };
+		F69559BF27FA9C8E005656AB /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = F69559BE27FA9C8E005656AB /* Assets.xcassets */; };
+		F69559C227FA9C8E005656AB /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = F69559C027FA9C8E005656AB /* LaunchScreen.storyboard */; };
+		F69559D227FA9D75005656AB /* BaseViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = F69559D127FA9D75005656AB /* BaseViewController.swift */; };
+		F69559D827FAA339005656AB /* Image.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = F69559D727FAA338005656AB /* Image.xcassets */; };
+		F69559DB27FAA50B005656AB /* SnapKit-Dynamic in Frameworks */ = {isa = PBXBuildFile; productRef = F69559DA27FAA50B005656AB /* SnapKit-Dynamic */; };
+		F69559DE27FAA519005656AB /* Then in Frameworks */ = {isa = PBXBuildFile; productRef = F69559DD27FAA519005656AB /* Then */; };
+		F69559E127FB0DD2005656AB /* SF-Pro-Display-Regular.otf in Resources */ = {isa = PBXBuildFile; fileRef = F69559E027FB0DD2005656AB /* SF-Pro-Display-Regular.otf */; };
+		F69559E627FB0EF6005656AB /* SF-Pro-Display-Semibold.otf in Resources */ = {isa = PBXBuildFile; fileRef = F69559E227FB0EF5005656AB /* SF-Pro-Display-Semibold.otf */; };
+		F69559E727FB0EF6005656AB /* SF-Pro-Display-Bold.otf in Resources */ = {isa = PBXBuildFile; fileRef = F69559E327FB0EF6005656AB /* SF-Pro-Display-Bold.otf */; };
+		F69559E827FB0EF6005656AB /* SF-Pro-Display-Medium.otf in Resources */ = {isa = PBXBuildFile; fileRef = F69559E427FB0EF6005656AB /* SF-Pro-Display-Medium.otf */; };
+		F69559EE27FB1030005656AB /* Font.swift in Sources */ = {isa = PBXBuildFile; fileRef = F69559ED27FB1030005656AB /* Font.swift */; };
+		F69559F027FB1164005656AB /* Image.swift in Sources */ = {isa = PBXBuildFile; fileRef = F69559EF27FB1164005656AB /* Image.swift */; };
+		F69559F227FB12BE005656AB /* Const.swift in Sources */ = {isa = PBXBuildFile; fileRef = F69559F127FB12BE005656AB /* Const.swift */; };
+		F69559F727FB15E5005656AB /* UIView+.swift in Sources */ = {isa = PBXBuildFile; fileRef = F69559F627FB15E5005656AB /* UIView+.swift */; };
+		F69559F927FB183E005656AB /* UIViewController+NibCreatable.swift in Sources */ = {isa = PBXBuildFile; fileRef = F69559F827FB183E005656AB /* UIViewController+NibCreatable.swift */; };
+		F69559FC27FB18A2005656AB /* NibCreatable.swift in Sources */ = {isa = PBXBuildFile; fileRef = F69559FB27FB18A2005656AB /* NibCreatable.swift */; };
+		F69559FE27FB1ACD005656AB /* UIView+NibCreatable.swift in Sources */ = {isa = PBXBuildFile; fileRef = F69559FD27FB1ACD005656AB /* UIView+NibCreatable.swift */; };
+		F6955A0027FB1B62005656AB /* UIStackView+.swift in Sources */ = {isa = PBXBuildFile; fileRef = F69559FF27FB1B62005656AB /* UIStackView+.swift */; };
+		F6955A0227FB1BBC005656AB /* Reusable.swift in Sources */ = {isa = PBXBuildFile; fileRef = F6955A0127FB1BBC005656AB /* Reusable.swift */; };
+		F6955A0427FB1EA1005656AB /* Color.swift in Sources */ = {isa = PBXBuildFile; fileRef = F6955A0327FB1EA1005656AB /* Color.swift */; };
+		F6955A0727FB3677005656AB /* SignInView.swift in Sources */ = {isa = PBXBuildFile; fileRef = F6955A0627FB3677005656AB /* SignInView.swift */; };
+		F6955A0D27FB444E005656AB /* Color.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = F6955A0C27FB444E005656AB /* Color.xcassets */; };
+		F6955A1427FB7B9E005656AB /* BlueButton.swift in Sources */ = {isa = PBXBuildFile; fileRef = F6955A1327FB7B9E005656AB /* BlueButton.swift */; };
+		F6955A1627FB8131005656AB /* UITextField+.swift in Sources */ = {isa = PBXBuildFile; fileRef = F6955A1527FB8131005656AB /* UITextField+.swift */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXFileReference section */
+		F66CD5CB27FB8EC300ACBCD1 /* SignUpView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SignUpView.swift; sourceTree = "<group>"; };
+		F66CD5DC27FD203500ACBCD1 /* SignUpView.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = SignUpView.xib; sourceTree = "<group>"; };
+		F66CD5DF27FD24DA00ACBCD1 /* SignUpFirstViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SignUpFirstViewController.swift; sourceTree = "<group>"; };
+		F66CD5E027FD24DA00ACBCD1 /* SignUpFirstViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = SignUpFirstViewController.xib; sourceTree = "<group>"; };
+		F66CD5E427FD2CA000ACBCD1 /* SignUpSecondViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SignUpSecondViewController.swift; sourceTree = "<group>"; };
+		F66CD5E527FD2CA000ACBCD1 /* SignUpSecondViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = SignUpSecondViewController.xib; sourceTree = "<group>"; };
+		F66CD5E927FD5E0D00ACBCD1 /* WelcomeViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WelcomeViewController.swift; sourceTree = "<group>"; };
+		F66CD5EB27FD5E1C00ACBCD1 /* WelcomeView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WelcomeView.swift; sourceTree = "<group>"; };
+		F69559B227FA9C8C005656AB /* Instagram_Clone.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Instagram_Clone.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		F69559B527FA9C8C005656AB /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
+		F69559B727FA9C8C005656AB /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
+		F69559B927FA9C8C005656AB /* SignInViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SignInViewController.swift; sourceTree = "<group>"; };
+		F69559BE27FA9C8E005656AB /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		F69559C127FA9C8E005656AB /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
+		F69559C327FA9C8E005656AB /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		F69559D127FA9D75005656AB /* BaseViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BaseViewController.swift; sourceTree = "<group>"; };
+		F69559D727FAA338005656AB /* Image.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Image.xcassets; sourceTree = "<group>"; };
+		F69559E027FB0DD2005656AB /* SF-Pro-Display-Regular.otf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "SF-Pro-Display-Regular.otf"; sourceTree = "<group>"; };
+		F69559E227FB0EF5005656AB /* SF-Pro-Display-Semibold.otf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "SF-Pro-Display-Semibold.otf"; sourceTree = "<group>"; };
+		F69559E327FB0EF6005656AB /* SF-Pro-Display-Bold.otf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "SF-Pro-Display-Bold.otf"; sourceTree = "<group>"; };
+		F69559E427FB0EF6005656AB /* SF-Pro-Display-Medium.otf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "SF-Pro-Display-Medium.otf"; sourceTree = "<group>"; };
+		F69559ED27FB1030005656AB /* Font.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Font.swift; sourceTree = "<group>"; };
+		F69559EF27FB1164005656AB /* Image.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Image.swift; sourceTree = "<group>"; };
+		F69559F127FB12BE005656AB /* Const.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Const.swift; sourceTree = "<group>"; };
+		F69559F627FB15E5005656AB /* UIView+.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UIView+.swift"; sourceTree = "<group>"; };
+		F69559F827FB183E005656AB /* UIViewController+NibCreatable.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UIViewController+NibCreatable.swift"; sourceTree = "<group>"; };
+		F69559FB27FB18A2005656AB /* NibCreatable.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NibCreatable.swift; sourceTree = "<group>"; };
+		F69559FD27FB1ACD005656AB /* UIView+NibCreatable.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UIView+NibCreatable.swift"; sourceTree = "<group>"; };
+		F69559FF27FB1B62005656AB /* UIStackView+.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UIStackView+.swift"; sourceTree = "<group>"; };
+		F6955A0127FB1BBC005656AB /* Reusable.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Reusable.swift; sourceTree = "<group>"; };
+		F6955A0327FB1EA1005656AB /* Color.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Color.swift; sourceTree = "<group>"; };
+		F6955A0627FB3677005656AB /* SignInView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SignInView.swift; sourceTree = "<group>"; };
+		F6955A0C27FB444E005656AB /* Color.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Color.xcassets; sourceTree = "<group>"; };
+		F6955A1327FB7B9E005656AB /* BlueButton.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BlueButton.swift; sourceTree = "<group>"; };
+		F6955A1527FB8131005656AB /* UITextField+.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UITextField+.swift"; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		F69559AF27FA9C8C005656AB /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				F69559DB27FAA50B005656AB /* SnapKit-Dynamic in Frameworks */,
+				F69559DE27FAA519005656AB /* Then in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		F66CD5D327FC026000ACBCD1 /* Views */ = {
+			isa = PBXGroup;
+			children = (
+				F6955A0627FB3677005656AB /* SignInView.swift */,
+			);
+			path = Views;
+			sourceTree = "<group>";
+		};
+		F66CD5E827FD5DF500ACBCD1 /* Welcome */ = {
+			isa = PBXGroup;
+			children = (
+				F66CD5ED27FD5E2000ACBCD1 /* Views */,
+				F66CD5EE27FD5E2600ACBCD1 /* Controllers */,
+			);
+			path = Welcome;
+			sourceTree = "<group>";
+		};
+		F66CD5ED27FD5E2000ACBCD1 /* Views */ = {
+			isa = PBXGroup;
+			children = (
+				F66CD5EB27FD5E1C00ACBCD1 /* WelcomeView.swift */,
+			);
+			path = Views;
+			sourceTree = "<group>";
+		};
+		F66CD5EE27FD5E2600ACBCD1 /* Controllers */ = {
+			isa = PBXGroup;
+			children = (
+				F66CD5E927FD5E0D00ACBCD1 /* WelcomeViewController.swift */,
+			);
+			path = Controllers;
+			sourceTree = "<group>";
+		};
+		F69559A927FA9C8C005656AB = {
+			isa = PBXGroup;
+			children = (
+				F69559B427FA9C8C005656AB /* Instagram_Clone */,
+				F69559B327FA9C8C005656AB /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		F69559B327FA9C8C005656AB /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				F69559B227FA9C8C005656AB /* Instagram_Clone.app */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		F69559B427FA9C8C005656AB /* Instagram_Clone */ = {
+			isa = PBXGroup;
+			children = (
+				F69559CB27FA9CF6005656AB /* Source */,
+				F69559C927FA9CA1005656AB /* Resource */,
+				F69559C327FA9C8E005656AB /* Info.plist */,
+			);
+			path = Instagram_Clone;
+			sourceTree = "<group>";
+		};
+		F69559C927FA9CA1005656AB /* Resource */ = {
+			isa = PBXGroup;
+			children = (
+				F69559DF27FB0CF0005656AB /* Fonts */,
+				F69559CA27FA9CB1005656AB /* Storyboards */,
+				F69559BE27FA9C8E005656AB /* Assets.xcassets */,
+				F6955A0C27FB444E005656AB /* Color.xcassets */,
+				F69559D727FAA338005656AB /* Image.xcassets */,
+			);
+			path = Resource;
+			sourceTree = "<group>";
+		};
+		F69559CA27FA9CB1005656AB /* Storyboards */ = {
+			isa = PBXGroup;
+			children = (
+				F69559C027FA9C8E005656AB /* LaunchScreen.storyboard */,
+			);
+			path = Storyboards;
+			sourceTree = "<group>";
+		};
+		F69559CB27FA9CF6005656AB /* Source */ = {
+			isa = PBXGroup;
+			children = (
+				F69559CC27FA9CFA005656AB /* Application */,
+				F69559F327FB1530005656AB /* Common */,
+				F6955A1027FB7AEF005656AB /* Presentation */,
+			);
+			path = Source;
+			sourceTree = "<group>";
+		};
+		F69559CC27FA9CFA005656AB /* Application */ = {
+			isa = PBXGroup;
+			children = (
+				F69559B527FA9C8C005656AB /* AppDelegate.swift */,
+				F69559B727FA9C8C005656AB /* SceneDelegate.swift */,
+			);
+			path = Application;
+			sourceTree = "<group>";
+		};
+		F69559CD27FA9D0C005656AB /* Controllers */ = {
+			isa = PBXGroup;
+			children = (
+				F69559B927FA9C8C005656AB /* SignInViewController.swift */,
+			);
+			path = Controllers;
+			sourceTree = "<group>";
+		};
+		F69559DF27FB0CF0005656AB /* Fonts */ = {
+			isa = PBXGroup;
+			children = (
+				F69559E327FB0EF6005656AB /* SF-Pro-Display-Bold.otf */,
+				F69559E427FB0EF6005656AB /* SF-Pro-Display-Medium.otf */,
+				F69559E227FB0EF5005656AB /* SF-Pro-Display-Semibold.otf */,
+				F69559E027FB0DD2005656AB /* SF-Pro-Display-Regular.otf */,
+			);
+			path = Fonts;
+			sourceTree = "<group>";
+		};
+		F69559EA27FB0FE8005656AB /* Consts */ = {
+			isa = PBXGroup;
+			children = (
+				F69559F127FB12BE005656AB /* Const.swift */,
+				F6955A0327FB1EA1005656AB /* Color.swift */,
+				F69559ED27FB1030005656AB /* Font.swift */,
+				F69559EF27FB1164005656AB /* Image.swift */,
+			);
+			path = Consts;
+			sourceTree = "<group>";
+		};
+		F69559F327FB1530005656AB /* Common */ = {
+			isa = PBXGroup;
+			children = (
+				F69559EA27FB0FE8005656AB /* Consts */,
+				F69559F527FB15C9005656AB /* Extensions */,
+				F69559FA27FB187B005656AB /* Protocols */,
+			);
+			path = Common;
+			sourceTree = "<group>";
+		};
+		F69559F527FB15C9005656AB /* Extensions */ = {
+			isa = PBXGroup;
+			children = (
+				F69559FF27FB1B62005656AB /* UIStackView+.swift */,
+				F69559F627FB15E5005656AB /* UIView+.swift */,
+				F69559FD27FB1ACD005656AB /* UIView+NibCreatable.swift */,
+				F69559F827FB183E005656AB /* UIViewController+NibCreatable.swift */,
+				F6955A1527FB8131005656AB /* UITextField+.swift */,
+			);
+			path = Extensions;
+			sourceTree = "<group>";
+		};
+		F69559FA27FB187B005656AB /* Protocols */ = {
+			isa = PBXGroup;
+			children = (
+				F69559FB27FB18A2005656AB /* NibCreatable.swift */,
+				F6955A0127FB1BBC005656AB /* Reusable.swift */,
+			);
+			path = Protocols;
+			sourceTree = "<group>";
+		};
+		F6955A1027FB7AEF005656AB /* Presentation */ = {
+			isa = PBXGroup;
+			children = (
+				F6955A1227FB7B41005656AB /* Common */,
+				F6955A1127FB7B02005656AB /* SignIn */,
+				F6955A1727FB8DFF005656AB /* SignUp */,
+				F66CD5E827FD5DF500ACBCD1 /* Welcome */,
+			);
+			path = Presentation;
+			sourceTree = "<group>";
+		};
+		F6955A1127FB7B02005656AB /* SignIn */ = {
+			isa = PBXGroup;
+			children = (
+				F66CD5D327FC026000ACBCD1 /* Views */,
+				F69559CD27FA9D0C005656AB /* Controllers */,
+			);
+			path = SignIn;
+			sourceTree = "<group>";
+		};
+		F6955A1227FB7B41005656AB /* Common */ = {
+			isa = PBXGroup;
+			children = (
+				F69559D127FA9D75005656AB /* BaseViewController.swift */,
+				F6955A1327FB7B9E005656AB /* BlueButton.swift */,
+				F66CD5CB27FB8EC300ACBCD1 /* SignUpView.swift */,
+				F66CD5DC27FD203500ACBCD1 /* SignUpView.xib */,
+			);
+			path = Common;
+			sourceTree = "<group>";
+		};
+		F6955A1727FB8DFF005656AB /* SignUp */ = {
+			isa = PBXGroup;
+			children = (
+				F6955A1827FB8E08005656AB /* Controllers */,
+			);
+			path = SignUp;
+			sourceTree = "<group>";
+		};
+		F6955A1827FB8E08005656AB /* Controllers */ = {
+			isa = PBXGroup;
+			children = (
+				F66CD5E027FD24DA00ACBCD1 /* SignUpFirstViewController.xib */,
+				F66CD5DF27FD24DA00ACBCD1 /* SignUpFirstViewController.swift */,
+				F66CD5E527FD2CA000ACBCD1 /* SignUpSecondViewController.xib */,
+				F66CD5E427FD2CA000ACBCD1 /* SignUpSecondViewController.swift */,
+			);
+			path = Controllers;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		F69559B127FA9C8C005656AB /* Instagram_Clone */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = F69559C627FA9C8E005656AB /* Build configuration list for PBXNativeTarget "Instagram_Clone" */;
+			buildPhases = (
+				F69559AE27FA9C8C005656AB /* Sources */,
+				F69559AF27FA9C8C005656AB /* Frameworks */,
+				F69559B027FA9C8C005656AB /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = Instagram_Clone;
+			packageProductDependencies = (
+				F69559DA27FAA50B005656AB /* SnapKit-Dynamic */,
+				F69559DD27FAA519005656AB /* Then */,
+			);
+			productName = Instagram_Clone;
+			productReference = F69559B227FA9C8C005656AB /* Instagram_Clone.app */;
+			productType = "com.apple.product-type.application";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		F69559AA27FA9C8C005656AB /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				BuildIndependentTargetsInParallel = 1;
+				LastSwiftUpdateCheck = 1320;
+				LastUpgradeCheck = 1320;
+				TargetAttributes = {
+					F69559B127FA9C8C005656AB = {
+						CreatedOnToolsVersion = 13.2.1;
+					};
+				};
+			};
+			buildConfigurationList = F69559AD27FA9C8C005656AB /* Build configuration list for PBXProject "Instagram_Clone" */;
+			compatibilityVersion = "Xcode 13.0";
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = F69559A927FA9C8C005656AB;
+			packageReferences = (
+				F69559D927FAA50B005656AB /* XCRemoteSwiftPackageReference "SnapKit" */,
+				F69559DC27FAA519005656AB /* XCRemoteSwiftPackageReference "Then" */,
+			);
+			productRefGroup = F69559B327FA9C8C005656AB /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				F69559B127FA9C8C005656AB /* Instagram_Clone */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		F69559B027FA9C8C005656AB /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				F69559E727FB0EF6005656AB /* SF-Pro-Display-Bold.otf in Resources */,
+				F6955A0D27FB444E005656AB /* Color.xcassets in Resources */,
+				F69559C227FA9C8E005656AB /* LaunchScreen.storyboard in Resources */,
+				F66CD5E227FD24DA00ACBCD1 /* SignUpFirstViewController.xib in Resources */,
+				F69559D827FAA339005656AB /* Image.xcassets in Resources */,
+				F69559E627FB0EF6005656AB /* SF-Pro-Display-Semibold.otf in Resources */,
+				F69559E127FB0DD2005656AB /* SF-Pro-Display-Regular.otf in Resources */,
+				F66CD5DD27FD203500ACBCD1 /* SignUpView.xib in Resources */,
+				F69559BF27FA9C8E005656AB /* Assets.xcassets in Resources */,
+				F66CD5E727FD2CA000ACBCD1 /* SignUpSecondViewController.xib in Resources */,
+				F69559E827FB0EF6005656AB /* SF-Pro-Display-Medium.otf in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		F69559AE27FA9C8C005656AB /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				F69559F927FB183E005656AB /* UIViewController+NibCreatable.swift in Sources */,
+				F69559BA27FA9C8C005656AB /* SignInViewController.swift in Sources */,
+				F69559F027FB1164005656AB /* Image.swift in Sources */,
+				F69559FE27FB1ACD005656AB /* UIView+NibCreatable.swift in Sources */,
+				F66CD5E627FD2CA000ACBCD1 /* SignUpSecondViewController.swift in Sources */,
+				F69559FC27FB18A2005656AB /* NibCreatable.swift in Sources */,
+				F66CD5EA27FD5E0D00ACBCD1 /* WelcomeViewController.swift in Sources */,
+				F69559F727FB15E5005656AB /* UIView+.swift in Sources */,
+				F6955A1627FB8131005656AB /* UITextField+.swift in Sources */,
+				F6955A0227FB1BBC005656AB /* Reusable.swift in Sources */,
+				F69559D227FA9D75005656AB /* BaseViewController.swift in Sources */,
+				F66CD5CC27FB8EC300ACBCD1 /* SignUpView.swift in Sources */,
+				F6955A0027FB1B62005656AB /* UIStackView+.swift in Sources */,
+				F6955A0727FB3677005656AB /* SignInView.swift in Sources */,
+				F6955A0427FB1EA1005656AB /* Color.swift in Sources */,
+				F69559EE27FB1030005656AB /* Font.swift in Sources */,
+				F69559B627FA9C8C005656AB /* AppDelegate.swift in Sources */,
+				F66CD5EC27FD5E1C00ACBCD1 /* WelcomeView.swift in Sources */,
+				F69559B827FA9C8C005656AB /* SceneDelegate.swift in Sources */,
+				F69559F227FB12BE005656AB /* Const.swift in Sources */,
+				F66CD5E127FD24DA00ACBCD1 /* SignUpFirstViewController.swift in Sources */,
+				F6955A1427FB7B9E005656AB /* BlueButton.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXVariantGroup section */
+		F69559C027FA9C8E005656AB /* LaunchScreen.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				F69559C127FA9C8E005656AB /* Base */,
+			);
+			name = LaunchScreen.storyboard;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		F69559C427FA9C8E005656AB /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++17";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 15.2;
+				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
+				MTL_FAST_MATH = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+			};
+			name = Debug;
+		};
+		F69559C527FA9C8E005656AB /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++17";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 15.2;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				MTL_FAST_MATH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_COMPILATION_MODE = wholemodule;
+				SWIFT_OPTIMIZATION_LEVEL = "-O";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		F69559C727FA9C8E005656AB /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = RS46GZF8TU;
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = Instagram_Clone/Info.plist;
+				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
+				INFOPLIST_KEY_UILaunchStoryboardName = LaunchScreen;
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = "sopt.org.Instagram-Clone";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		F69559C827FA9C8E005656AB /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = RS46GZF8TU;
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = Instagram_Clone/Info.plist;
+				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
+				INFOPLIST_KEY_UILaunchStoryboardName = LaunchScreen;
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = "sopt.org.Instagram-Clone";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		F69559AD27FA9C8C005656AB /* Build configuration list for PBXProject "Instagram_Clone" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				F69559C427FA9C8E005656AB /* Debug */,
+				F69559C527FA9C8E005656AB /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		F69559C627FA9C8E005656AB /* Build configuration list for PBXNativeTarget "Instagram_Clone" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				F69559C727FA9C8E005656AB /* Debug */,
+				F69559C827FA9C8E005656AB /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+
+/* Begin XCRemoteSwiftPackageReference section */
+		F69559D927FAA50B005656AB /* XCRemoteSwiftPackageReference "SnapKit" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/SnapKit/SnapKit.git";
+			requirement = {
+				branch = develop;
+				kind = branch;
+			};
+		};
+		F69559DC27FAA519005656AB /* XCRemoteSwiftPackageReference "Then" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/devxoul/Then.git";
+			requirement = {
+				branch = master;
+				kind = branch;
+			};
+		};
+/* End XCRemoteSwiftPackageReference section */
+
+/* Begin XCSwiftPackageProductDependency section */
+		F69559DA27FAA50B005656AB /* SnapKit-Dynamic */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = F69559D927FAA50B005656AB /* XCRemoteSwiftPackageReference "SnapKit" */;
+			productName = "SnapKit-Dynamic";
+		};
+		F69559DD27FAA519005656AB /* Then */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = F69559DC27FAA519005656AB /* XCRemoteSwiftPackageReference "Then" */;
+			productName = Then;
+		};
+/* End XCSwiftPackageProductDependency section */
+	};
+	rootObject = F69559AA27FA9C8C005656AB /* Project object */;
+}
