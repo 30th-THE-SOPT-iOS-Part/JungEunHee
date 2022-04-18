@@ -37,7 +37,12 @@ final class SignInViewController: BaseViewController {
     
     @objc
     private func textFieldDidChanged(_ textField: UITextField) {
-        signInView.signUpButton.isEnabled = [signInView.idTextField, signInView.passwordTextField].allSatisfy { $0.hasText }
+        signInView.signInButton.isEnabled = [signInView.idTextField, signInView.passwordTextField].allSatisfy { $0.hasText }
+        if signInView.signInButton.isEnabled {
+            signInView.signInButton.backgroundColor = UIColor.systemBlue
+        } else {
+            signInView.signInButton.backgroundColor = Const.Color.blue
+        }
     }
     
     @objc
