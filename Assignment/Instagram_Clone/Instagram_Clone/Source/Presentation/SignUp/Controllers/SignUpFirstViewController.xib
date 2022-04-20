@@ -10,7 +10,7 @@
     <objects>
         <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner" customClass="SignUpFirstViewController" customModule="Instagram_Clone" customModuleProvider="target">
             <connections>
-                <outlet property="reusableView" destination="XyC-uv-9c9" id="k85-TX-PD3"/>
+                <outlet property="signUpFirstView" destination="XyC-uv-9c9" id="dSl-od-UUe"/>
                 <outlet property="view" destination="i5M-Pr-FkT" id="sfx-zR-JGt"/>
             </connections>
         </placeholder>

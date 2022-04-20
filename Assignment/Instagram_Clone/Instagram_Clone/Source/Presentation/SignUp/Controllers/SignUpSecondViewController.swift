@@ -10,7 +10,7 @@ import UIKit
 final class SignUpSecondViewController: BaseViewController {
     
     // MARK: - @IBOutlet Properties
-    @IBOutlet weak var reusableView: SignUpView!
+    @IBOutlet weak var signUpSecondView: SignUpView!
     
     // MARK: - View Life Cycle
     override func viewDidLoad() {
@@ -20,16 +20,22 @@ final class SignUpSecondViewController: BaseViewController {
     }
     
     // MARK: - Functions
+    override func setNavigation() {
+        super.setNavigation()
+        
+        navigationController?.navigationBar.isHidden = true
+    }
+    
     override func setStyle() {
         super.setStyle()
         
-        reusableView.titleLabel.text = "비밀번호 만들기"
-        reusableView.descriptionLabel.text = "비밀번호를 저장할 수 있으므로 iCloud® 기기에서 로그인\n정보를 입력하지 않아도 됩니다."
-        reusableView.inputTextField.placeholder = "비밀번호"
+        signUpSecondView.titleLabel.text = "비밀번호 만들기"
+        signUpSecondView.descriptionLabel.text = "비밀번호를 저장할 수 있으므로 iCloud® 기기에서 로그인\n정보를 입력하지 않아도 됩니다."
+        signUpSecondView.inputTextField.placeholder = "비밀번호"
     }
     
     private func assignDelegation() {
-        reusableView.delegate = self
+        signUpSecondView.delegate = self
     }
 }
 
@@ -42,6 +48,8 @@ extension SignUpSecondViewController: SignUpViewDelegate {
         let nextVC = WelcomeViewController.instanceFromNib()
         nextVC.modalTransitionStyle = .crossDissolve
         nextVC.modalPresentationStyle = .fullScreen
-        self.present(nextVC, animated: true)
+        self.present(nextVC, animated: true) {
+            self.navigationController?.popToRootViewController(animated: true)
+        }
     }
 }

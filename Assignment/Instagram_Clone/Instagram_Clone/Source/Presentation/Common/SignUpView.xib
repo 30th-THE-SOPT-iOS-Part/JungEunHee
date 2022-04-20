@@ -13,7 +13,6 @@
             <connections>
                 <outlet property="descriptionLabel" destination="7yB-DQ-8zc" id="7pG-I4-TfX"/>
                 <outlet property="inputTextField" destination="j2n-CZ-hXm" id="oUZ-cA-X0c"/>
-                <outlet property="nextButton" destination="VbQ-l1-WKv" id="lkV-Am-JQd"/>
                 <outlet property="titleLabel" destination="Za0-8Q-nXX" id="X3g-K0-6Cp"/>
             </connections>
         </placeholder>
@@ -23,12 +22,13 @@
             <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
             <subviews>
                 <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" usesAttributedText="YES" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Za0-8Q-nXX">
-                    <rect key="frame" x="144.5" y="110" width="125" height="29"/>
+                    <rect key="frame" x="144.5" y="110" width="125" height="27"/>
                     <attributedString key="attributedText">
                         <fragment content="제목제목제목">
                             <attributes>
                                 <color key="NSColor" name="textColor" catalog="System" colorSpace="catalog"/>
-                                <font key="NSFont" metaFont="system" size="24"/>
+                                <font key="NSFont" size="24" name=".AppleSDGothicNeoI-Regular"/>
+                                <font key="NSOriginalFont" metaFont="system" size="24"/>
                                 <paragraphStyle key="NSParagraphStyle" alignment="center" lineBreakMode="wordWrapping" baseWritingDirection="natural" tighteningFactorForTruncation="0.0"/>
                             </attributes>
                         </fragment>
@@ -36,7 +36,7 @@
                     <nil key="highlightedColor"/>
                 </label>
                 <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="사용자 이름" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="j2n-CZ-hXm">
-                    <rect key="frame" x="20" y="225.5" width="374" height="45"/>
+                    <rect key="frame" x="20" y="223.5" width="374" height="45"/>
                     <color key="backgroundColor" name="LightGray"/>
                     <constraints>
                         <constraint firstAttribute="height" constant="45" id="5Bz-5N-Ifs"/>
@@ -45,7 +45,7 @@
                     <textInputTraits key="textInputTraits"/>
                 </textField>
                 <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="VbQ-l1-WKv">
-                    <rect key="frame" x="20" y="290.5" width="374" height="45"/>
+                    <rect key="frame" x="20" y="288.5" width="374" height="45"/>
                     <constraints>
                         <constraint firstAttribute="height" constant="45" id="nCB-Hc-MKL"/>
                     </constraints>
@@ -64,7 +64,7 @@
                     </connections>
                 </button>
                 <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" usesAttributedText="YES" lineBreakMode="wordWrap" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="7yB-DQ-8zc">
-                    <rect key="frame" x="181" y="159" width="52" height="31.5"/>
+                    <rect key="frame" x="181" y="157" width="52" height="31.5"/>
                     <attributedString key="attributedText">
                         <fragment>
                             <string key="content">설명설명 

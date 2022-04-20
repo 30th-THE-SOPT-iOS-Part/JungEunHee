@@ -25,13 +25,19 @@ class SignUpView: UIView {
     // MARK: - Initialization
     required init?(coder: NSCoder) {
         super.init(coder: coder)
-        
+
         commonInit()
     }
     
     // MARK: - Functions
     private func commonInit() {
-        let signUpView = SignUpView.instanceFromNib()
+        /*
+         instanceFromNib() 메서드를 사용하지 않은 이유
+          - SignUpView라는 클래스에 xib를 넣어주기 위함 (나중에 초기화할때 UIView로 불러올 수 있도록)
+          - 가장 root에 있는 UIView를 가져올 것이기 때문에 .first 붙여줌
+         */
+        guard let signUpView = UINib(nibName: "SignUpView", bundle: nil).instantiate(withOwner: self, options: nil).first as? UIView else { return }
+        
         signUpView.frame = self.bounds
         self.addSubview(signUpView)
     }
