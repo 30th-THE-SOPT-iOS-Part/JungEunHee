@@ -24,7 +24,7 @@ final class SignInViewController: BaseViewController {
     override func viewWillAppear(_ animated: Bool) {
         super.viewWillAppear(animated)
         
-        textFieldCleanUp()
+        initializeSignInView()
     }
     
     override func didReceiveMemoryWarning() {
@@ -78,8 +78,9 @@ final class SignInViewController: BaseViewController {
         signInView.passwordTextField.isSecureTextEntry = !(signInView.passwordTextField.isSecureTextEntry)
     }
     
-    private func textFieldCleanUp() {
+    private func initializeSignInView() {
         signInView.idTextField.text?.removeAll()
         signInView.passwordTextField.text?.removeAll()
+        signInView.signInButton.backgroundColor = Const.Color.blue
     }
 }
