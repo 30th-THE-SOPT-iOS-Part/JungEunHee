@@ -48,7 +48,7 @@ final class SignInViewController: BaseViewController {
     @objc
     private func signInButtonClicked() {
         let nextVC = WelcomeViewController.instanceFromNib()
-        nextVC.userName = signInView.idTextField.text
+        UserDefaults.standard.set(signInView.idTextField.text, forKey: "userName")
         nextVC.modalTransitionStyle = .crossDissolve
         nextVC.modalPresentationStyle = .fullScreen
         self.present(nextVC, animated: true)

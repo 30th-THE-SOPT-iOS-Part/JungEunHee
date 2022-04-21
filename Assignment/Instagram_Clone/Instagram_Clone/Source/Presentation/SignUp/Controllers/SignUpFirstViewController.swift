@@ -47,6 +47,7 @@ extension SignUpFirstViewController: SignUpViewDelegate {
         self.navigationController?.popViewController(animated: true)
     }
     internal func nextButtonClicked() {
+        UserDefaults.standard.set(signUpFirstView.inputTextField.text, forKey: "userName")
         let nextVC = SignUpSecondViewController.instanceFromNib()
         self.navigationController?.pushViewController(nextVC, animated: true)
     }

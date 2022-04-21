@@ -39,7 +39,7 @@ final class WelcomeViewController: BaseViewController {
     }
     
     private func setUserName() {
-        if let userName = userName {
+        if let userName = UserDefaults.standard.string(forKey: "userName") {
             welcomeView.welcomeLabel.text = """
             \(userName)님 Instagram에
             오신 것을 환영합니다
