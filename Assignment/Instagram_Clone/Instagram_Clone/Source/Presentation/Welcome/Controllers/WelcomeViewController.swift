@@ -11,7 +11,6 @@ final class WelcomeViewController: BaseViewController {
     
     // MARK: - Properties
     private let welcomeView = WelcomeView()
-    public var userName: String?
 
     // MARK: - View Life Cycle
     override func loadView() {
