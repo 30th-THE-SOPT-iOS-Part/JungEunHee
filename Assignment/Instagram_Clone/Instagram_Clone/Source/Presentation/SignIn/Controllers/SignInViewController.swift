@@ -21,6 +21,16 @@ final class SignInViewController: BaseViewController {
         super.viewDidLoad()
     }
     
+    override func viewWillAppear(_ animated: Bool) {
+        super.viewWillAppear(animated)
+        
+        textFieldCleanUp()
+    }
+    
+    override func didReceiveMemoryWarning() {
+        super.didReceiveMemoryWarning()
+    }
+    
     // MARK: - Functions
     override func setTargets() {
         super.setTargets()
@@ -66,5 +76,10 @@ final class SignInViewController: BaseViewController {
         signInView.hideButton.setImage(Const.Image.icPasswordShownEye, for: .normal) :
         signInView.hideButton.setImage(Const.Image.icPasswordHiddenEye, for: .normal)
         signInView.passwordTextField.isSecureTextEntry = !(signInView.passwordTextField.isSecureTextEntry)
+    }
+    
+    private func textFieldCleanUp() {
+        signInView.idTextField.text?.removeAll()
+        signInView.passwordTextField.text?.removeAll()
     }
 }
