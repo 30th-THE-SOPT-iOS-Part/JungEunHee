@@ -152,15 +152,31 @@
 		F669CD472812D2D900EAE8E7 /* Xibs */ = {
 			isa = PBXGroup;
 			children = (
+				F669CD482812F4A100EAE8E7 /* Auth */,
+				F669CD492812F4AF00EAE8E7 /* Main */,
+			);
+			path = Xibs;
+			sourceTree = "<group>";
+		};
+		F669CD482812F4A100EAE8E7 /* Auth */ = {
+			isa = PBXGroup;
+			children = (
+				F66CD5E027FD24DA00ACBCD1 /* SignUpFirstViewController.xib */,
+				F66CD5E527FD2CA000ACBCD1 /* SignUpSecondViewController.xib */,
+			);
+			path = Auth;
+			sourceTree = "<group>";
+		};
+		F669CD492812F4AF00EAE8E7 /* Main */ = {
+			isa = PBXGroup;
+			children = (
 				F669CD432812CFD000EAE8E7 /* ProfileViewController.xib */,
 				F669CD3F2812CFC800EAE8E7 /* ShopViewController.xib */,
 				F669CD3B2812CFB600EAE8E7 /* ReelsViewController.xib */,
 				F669CD372812CFAF00EAE8E7 /* SearchViewController.xib */,
 				F669CD332812CFA100EAE8E7 /* HomeViewController.xib */,
-				F66CD5E027FD24DA00ACBCD1 /* SignUpFirstViewController.xib */,
-				F66CD5E527FD2CA000ACBCD1 /* SignUpSecondViewController.xib */,
 			);
-			path = Xibs;
+			path = Main;
 			sourceTree = "<group>";
 		};
 		F66CD5D327FC026000ACBCD1 /* Views */ = {
