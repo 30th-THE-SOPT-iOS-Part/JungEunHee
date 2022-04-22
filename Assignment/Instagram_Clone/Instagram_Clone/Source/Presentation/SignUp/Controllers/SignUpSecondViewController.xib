@@ -10,11 +10,12 @@
     <objects>
         <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner" customClass="SignUpSecondViewController" customModule="Instagram_Clone" customModuleProvider="target">
             <connections>
-                <outlet property="reusableView" destination="59A-p9-uUZ" id="5wM-CO-yRJ"/>
+                <outlet property="signUpSecondView" destination="59A-p9-uUZ" id="wJE-b7-d6T"/>
+                <outlet property="view" destination="i5M-Pr-FkT" id="qrO-ol-Tza"/>
             </connections>
         </placeholder>
         <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
-        <view clearsContextBeforeDrawing="NO" contentMode="scaleToFill" id="i5M-Pr-FkT">
+        <view clearsContextBeforeDrawing="NO" contentMode="scaleToFill" restorationIdentifier="SignUpSecondView" id="i5M-Pr-FkT">
             <rect key="frame" x="0.0" y="0.0" width="375" height="812"/>
             <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
             <subviews>

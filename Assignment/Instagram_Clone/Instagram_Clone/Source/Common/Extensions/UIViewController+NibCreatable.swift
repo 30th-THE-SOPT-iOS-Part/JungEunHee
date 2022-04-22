@@ -28,6 +28,7 @@ extension UIViewController: NibCreatable {
     
     public final class func instanceFromNib() -> Self {
         // 생성자를 통해 인스턴스를 생성하지 않더라도 바로 접근 가능하도록 하기 위해 class func로 선언.
+        // 클래스 자체를 리턴해 나중에 뷰 컨트롤러에서 인스턴스화 해줄 때 사용함
         
         return Self.init(nibName: nibName, bundle: nibBundle)
     }

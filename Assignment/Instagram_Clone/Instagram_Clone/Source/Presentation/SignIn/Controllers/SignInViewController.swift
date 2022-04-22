@@ -11,14 +11,24 @@ final class SignInViewController: BaseViewController {
     
     // MARK: - Properties
     private let signInView = SignInView()
-
+    
     // MARK: - View Life Cycle
+    override func loadView() {
+        view = signInView
+    }
+    
     override func viewDidLoad() {
         super.viewDidLoad()
     }
-
-    override func loadView() {
-        view = signInView
+    
+    override func viewWillAppear(_ animated: Bool) {
+        super.viewWillAppear(animated)
+        
+        initializeSignInView()
+    }
+    
+    override func didReceiveMemoryWarning() {
+        super.didReceiveMemoryWarning()
     }
     
     // MARK: - Functions
@@ -37,16 +47,18 @@ final class SignInViewController: BaseViewController {
     
     @objc
     private func textFieldDidChanged(_ textField: UITextField) {
-        signInView.signUpButton.isEnabled = false
-        if signInView.idTextField.hasText || signInView.passwordTextField.hasText {
-            signInView.signUpButton.isEnabled.toggle()
+        signInView.signInButton.isEnabled = [signInView.idTextField, signInView.passwordTextField].allSatisfy { $0.hasText }
+        if signInView.signInButton.isEnabled {
+            signInView.signInButton.backgroundColor = UIColor.systemBlue
+        } else {
+            signInView.signInButton.backgroundColor = Const.Color.blue
         }
     }
     
     @objc
     private func signInButtonClicked() {
         let nextVC = WelcomeViewController.instanceFromNib()
-        nextVC.userName = signInView.idTextField.text
+        UserDefaults.standard.set(signInView.idTextField.text, forKey: "userName")
         nextVC.modalTransitionStyle = .crossDissolve
         nextVC.modalPresentationStyle = .fullScreen
         self.present(nextVC, animated: true)
@@ -60,7 +72,15 @@ final class SignInViewController: BaseViewController {
     
     @objc
     private func hideButtonClicked() {
-        signInView.passwordTextField.isSecureTextEntry ? signInView.hideButton.setImage(Const.Image.icPasswordHiddenEye, for: .normal) : signInView.hideButton.setImage(Const.Image.icPasswordShownEye, for: .normal)
+        signInView.passwordTextField.isSecureTextEntry ?
+        signInView.hideButton.setImage(Const.Image.icPasswordShownEye, for: .normal) :
+        signInView.hideButton.setImage(Const.Image.icPasswordHiddenEye, for: .normal)
         signInView.passwordTextField.isSecureTextEntry = !(signInView.passwordTextField.isSecureTextEntry)
+    }
+    
+    private func initializeSignInView() {
+        signInView.idTextField.text?.removeAll()
+        signInView.passwordTextField.text?.removeAll()
+        signInView.signInButton.backgroundColor = Const.Color.blue
     }
 }

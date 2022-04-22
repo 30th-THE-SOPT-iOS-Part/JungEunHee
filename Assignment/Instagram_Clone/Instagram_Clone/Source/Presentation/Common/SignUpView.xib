@@ -13,7 +13,6 @@
             <connections>
                 <outlet property="descriptionLabel" destination="7yB-DQ-8zc" id="7pG-I4-TfX"/>
                 <outlet property="inputTextField" destination="j2n-CZ-hXm" id="oUZ-cA-X0c"/>
-                <outlet property="nextButton" destination="VbQ-l1-WKv" id="lkV-Am-JQd"/>
                 <outlet property="titleLabel" destination="Za0-8Q-nXX" id="X3g-K0-6Cp"/>
             </connections>
         </placeholder>
@@ -29,6 +28,7 @@
                             <attributes>
                                 <color key="NSColor" name="textColor" catalog="System" colorSpace="catalog"/>
                                 <font key="NSFont" metaFont="system" size="24"/>
+                                <font key="NSOriginalFont" metaFont="system" size="24"/>
                                 <paragraphStyle key="NSParagraphStyle" alignment="center" lineBreakMode="wordWrapping" baseWritingDirection="natural" tighteningFactorForTruncation="0.0"/>
                             </attributes>
                         </fragment>

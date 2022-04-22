@@ -14,14 +14,14 @@ class BaseViewController: UIViewController {
         super.viewDidLoad()
 
         setHierarchy()
-        setLayout()
         setNavigation()
+        setStyle()
         setTargets()
     }
     
     // MARK: - Functions
     public func setHierarchy() { }
-    public func setLayout() { }
     public func setNavigation() { }
+    public func setStyle() { }
     public func setTargets() { }
 }

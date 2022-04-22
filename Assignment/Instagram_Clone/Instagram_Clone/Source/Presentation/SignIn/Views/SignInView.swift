@@ -24,7 +24,6 @@ final class SignInView: UIView {
         $0.borderStyle = .roundedRect
         $0.clearButtonMode = .whileEditing
         $0.setLeftPadding(amount: 10)
-        $0.setRightPadding(amount: 10)
         $0.spellCheckingType = .no
         $0.placeholder = "전화번호, 사용자 이름 또는 이메일"
     }
@@ -55,7 +54,9 @@ final class SignInView: UIView {
         $0.textAlignment = .right
         $0.textColor = UIColor(cgColor: Const.Color.blue.cgColor)
     }
-    public let signInButton = BlueButton.init(frame: CGRect(), text: "로그인", fontSize: 10)
+    public let signInButton = BlueButton.init(frame: CGRect(), text: "로그인", fontSize: 10).then {
+        $0.isEnabled = false
+    }
     private let authHelpLabel = UILabel().then {
         $0.font = UIFont(name: Const.Font.SFProDisplayMedium.rawValue, size: 10)
         $0.sizeToFit()
