@@ -73,8 +73,8 @@ final class SignInViewController: BaseViewController {
     @objc
     private func hideButtonClicked() {
         signInView.passwordTextField.isSecureTextEntry ?
-        signInView.hideButton.setImage(Const.Image.icPasswordShownEye, for: .normal) :
-        signInView.hideButton.setImage(Const.Image.icPasswordHiddenEye, for: .normal)
+        signInView.hideButton.setImage(Const.Image.icnPasswordShownEye, for: .normal) :
+        signInView.hideButton.setImage(Const.Image.icnPasswordHiddenEye, for: .normal)
         signInView.passwordTextField.isSecureTextEntry = !(signInView.passwordTextField.isSecureTextEntry)
     }
     

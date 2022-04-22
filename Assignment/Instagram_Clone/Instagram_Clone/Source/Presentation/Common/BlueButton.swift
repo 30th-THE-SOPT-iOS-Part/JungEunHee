@@ -29,7 +29,7 @@ final class BlueButton: UIButton {
     
     // MARK: - Functions
     private func setUI(text: String, fontSize: Int) {
-        backgroundColor = Const.Color.blue
+        backgroundColor = Const.Color.lightBlue
         makeRounded(radius: 8)
         setTitle(text, for: .normal)
         setTitleColor(Const.Color.white, for: .normal)

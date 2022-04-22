@@ -22,7 +22,7 @@
             <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
             <subviews>
                 <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" usesAttributedText="YES" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Za0-8Q-nXX">
-                    <rect key="frame" x="144.5" y="110" width="125" height="29"/>
+                    <rect key="frame" x="144.5" y="94" width="125" height="29"/>
                     <attributedString key="attributedText">
                         <fragment content="제목제목제목">
                             <attributes>
@@ -35,8 +35,8 @@
                     </attributedString>
                     <nil key="highlightedColor"/>
                 </label>
-                <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="사용자 이름" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="j2n-CZ-hXm">
-                    <rect key="frame" x="20" y="225.5" width="374" height="45"/>
+                <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="사용자 이름" textAlignment="natural" minimumFontSize="17" clearButtonMode="whileEditing" translatesAutoresizingMaskIntoConstraints="NO" id="j2n-CZ-hXm">
+                    <rect key="frame" x="16" y="192.5" width="382" height="45"/>
                     <color key="backgroundColor" name="LightGray"/>
                     <constraints>
                         <constraint firstAttribute="height" constant="45" id="5Bz-5N-Ifs"/>
@@ -45,7 +45,7 @@
                     <textInputTraits key="textInputTraits"/>
                 </textField>
                 <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="VbQ-l1-WKv">
-                    <rect key="frame" x="20" y="290.5" width="374" height="45"/>
+                    <rect key="frame" x="16" y="259.5" width="382" height="45"/>
                     <constraints>
                         <constraint firstAttribute="height" constant="45" id="nCB-Hc-MKL"/>
                     </constraints>
@@ -64,7 +64,7 @@
                     </connections>
                 </button>
                 <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" usesAttributedText="YES" lineBreakMode="wordWrap" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="7yB-DQ-8zc">
-                    <rect key="frame" x="181" y="159" width="52" height="31.5"/>
+                    <rect key="frame" x="181" y="142" width="52" height="31.5"/>
                     <attributedString key="attributedText">
                         <fragment>
                             <string key="content">설명설명 
@@ -94,16 +94,16 @@
             <viewLayoutGuide key="safeArea" id="vUN-kp-3ea"/>
             <color key="backgroundColor" systemColor="systemBackgroundColor"/>
             <constraints>
-                <constraint firstItem="Za0-8Q-nXX" firstAttribute="top" secondItem="iN0-l3-epB" secondAttribute="top" constant="110" id="267-K9-QLi"/>
-                <constraint firstItem="vUN-kp-3ea" firstAttribute="trailing" secondItem="j2n-CZ-hXm" secondAttribute="trailing" constant="20" id="2AK-90-OQM"/>
-                <constraint firstItem="VbQ-l1-WKv" firstAttribute="leading" secondItem="vUN-kp-3ea" secondAttribute="leading" constant="20" id="2vk-yS-fZA"/>
-                <constraint firstItem="j2n-CZ-hXm" firstAttribute="top" secondItem="7yB-DQ-8zc" secondAttribute="bottom" constant="35" id="H5i-eZ-vaJ"/>
+                <constraint firstItem="Za0-8Q-nXX" firstAttribute="top" secondItem="iN0-l3-epB" secondAttribute="top" constant="94" id="267-K9-QLi"/>
+                <constraint firstItem="vUN-kp-3ea" firstAttribute="trailing" secondItem="j2n-CZ-hXm" secondAttribute="trailing" constant="16" id="2AK-90-OQM"/>
+                <constraint firstItem="VbQ-l1-WKv" firstAttribute="leading" secondItem="vUN-kp-3ea" secondAttribute="leading" constant="16" id="2vk-yS-fZA"/>
+                <constraint firstItem="j2n-CZ-hXm" firstAttribute="top" secondItem="7yB-DQ-8zc" secondAttribute="bottom" constant="19" id="H5i-eZ-vaJ"/>
                 <constraint firstItem="bEP-Mg-l9v" firstAttribute="top" secondItem="iN0-l3-epB" secondAttribute="top" constant="10" id="OE1-do-g59"/>
                 <constraint firstItem="Za0-8Q-nXX" firstAttribute="centerX" secondItem="vUN-kp-3ea" secondAttribute="centerX" id="Q3O-Wg-11Z"/>
-                <constraint firstItem="j2n-CZ-hXm" firstAttribute="leading" secondItem="vUN-kp-3ea" secondAttribute="leading" constant="20" id="fT8-kN-jHd"/>
-                <constraint firstItem="vUN-kp-3ea" firstAttribute="trailing" secondItem="VbQ-l1-WKv" secondAttribute="trailing" constant="20" id="jPr-6L-2CD"/>
-                <constraint firstItem="VbQ-l1-WKv" firstAttribute="top" secondItem="j2n-CZ-hXm" secondAttribute="bottom" constant="20" id="lXs-8f-a7P"/>
-                <constraint firstItem="7yB-DQ-8zc" firstAttribute="top" secondItem="Za0-8Q-nXX" secondAttribute="bottom" constant="20" id="muH-mA-RJa"/>
+                <constraint firstItem="j2n-CZ-hXm" firstAttribute="leading" secondItem="vUN-kp-3ea" secondAttribute="leading" constant="16" id="fT8-kN-jHd"/>
+                <constraint firstItem="vUN-kp-3ea" firstAttribute="trailing" secondItem="VbQ-l1-WKv" secondAttribute="trailing" constant="16" id="jPr-6L-2CD"/>
+                <constraint firstItem="VbQ-l1-WKv" firstAttribute="top" secondItem="j2n-CZ-hXm" secondAttribute="bottom" constant="22" id="lXs-8f-a7P"/>
+                <constraint firstItem="7yB-DQ-8zc" firstAttribute="top" secondItem="Za0-8Q-nXX" secondAttribute="bottom" constant="19" id="muH-mA-RJa"/>
                 <constraint firstItem="bEP-Mg-l9v" firstAttribute="leading" secondItem="iN0-l3-epB" secondAttribute="leading" constant="10" id="soe-HW-w1B"/>
                 <constraint firstItem="7yB-DQ-8zc" firstAttribute="centerX" secondItem="vUN-kp-3ea" secondAttribute="centerX" id="xzE-nq-sgY"/>
             </constraints>
