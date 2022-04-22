@@ -27,7 +27,18 @@ final class WelcomeViewController: BaseViewController {
     override func setTargets() {
         super.setTargets()
         
-        welcomeView.doneButton.addTarget(self, action: #selector(addDissmiss), for: .touchUpInside)
+        welcomeView.doneButton.addTarget(self, action: #selector(addPresentation), for: .touchUpInside)
+        welcomeView.anotherLoginButton.addTarget(self, action: #selector(addDissmiss), for: .touchUpInside)
+    }
+    
+    @objc
+    private func addPresentation() {
+        let homeVC = HomeViewController.instanceFromNib()
+        homeVC.modalTransitionStyle = .crossDissolve
+        homeVC.modalPresentationStyle = .fullScreen
+        self.present(homeVC, animated: true) {
+            self.navigationController?.popToRootViewController(animated: true)
+        }
     }
     
     @objc
