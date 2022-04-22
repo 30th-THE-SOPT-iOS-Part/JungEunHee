@@ -28,12 +28,6 @@ final class TabBarController: UITabBarController {
         tabBar.frame.origin.y = view.frame.height - 84
     }
     
-    override func tabBar(_ tabBar: UITabBar, didSelect item: UITabBarItem) {
-        super.tabBar(tabBar, didSelect: item)
-        
-        guard let imageView = tabBar.subviews[item.tag + 1].subviews.compactMap({ $0 as? UIImageView }).first else { return }
-    }
-    
     private func setTabBarItems() {
         tabs = [
             UINavigationController(rootViewController: HomeViewController.instanceFromNib()),
@@ -48,7 +42,7 @@ final class TabBarController: UITabBarController {
             tabs[$0.rawValue].tabBarItem.tag = $0.rawValue
         }
         
-        setViewControllers(tabs, animated: false)
+        setViewControllers(tabs, animated: true)
     }
     
     private func setTabBarAppearance() {
