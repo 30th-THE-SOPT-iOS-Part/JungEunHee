@@ -17,6 +17,7 @@ final class TabBarController: UITabBarController {
         super.viewDidLoad()
 
         setTabBarItems()
+        setTabBarAppearance()
     }
     
     // MARK: - Functions
@@ -47,6 +48,12 @@ final class TabBarController: UITabBarController {
             tabs[$0.rawValue].tabBarItem.tag = $0.rawValue
         }
         
-        setViewControllers(tabs, animated: true)
+        setViewControllers(tabs, animated: false)
+    }
+    
+    private func setTabBarAppearance() {
+        UITabBar.appearance().backgroundColor = Const.Color.white
+        UITabBar.appearance().tintColor = Const.Color.black
+        UITabBar.appearance().unselectedItemTintColor = Const.Color.black
     }
 }
