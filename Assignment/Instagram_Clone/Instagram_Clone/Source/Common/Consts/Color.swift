@@ -15,6 +15,7 @@ extension Const {
         public static let darkGray = UIColor(named: "DarkGray")!
         public static let gray = UIColor(named: "Gray")!
         public static let lightGray = UIColor(named: "LightGray")!
+        public static let lightBlue = UIColor(named: "LightBlue")!
         public static let white = UIColor(named: "White")!
     }
 }
