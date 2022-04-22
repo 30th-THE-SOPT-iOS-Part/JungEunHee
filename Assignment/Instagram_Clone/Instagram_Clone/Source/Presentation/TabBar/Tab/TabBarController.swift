@@ -51,3 +51,15 @@ final class TabBarController: UITabBarController {
         UITabBar.appearance().unselectedItemTintColor = Const.Color.black
     }
 }
+
+extension TabBarController: UITabBarControllerDelegate {
+    func tabBarController(_ tabBarController: UITabBarController, didSelect viewController: UIViewController) {
+        let tabBarItemIndex = viewController.tabBarItem.tag
+        
+        if tabBarItemIndex == 2 {
+            tabBar.backgroundColor = Const.Color.black
+            tabBar.tintColor = Const.Color.white
+            tabBar.unselectedItemTintColor = Const.Color.white
+        }
+    }
+}
