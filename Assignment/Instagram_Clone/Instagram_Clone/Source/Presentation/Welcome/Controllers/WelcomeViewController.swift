@@ -33,10 +33,10 @@ final class WelcomeViewController: BaseViewController {
     
     @objc
     private func addPresentation() {
-        let homeVC = HomeViewController.instanceFromNib()
-        homeVC.modalTransitionStyle = .crossDissolve
-        homeVC.modalPresentationStyle = .fullScreen
-        self.present(homeVC, animated: true) {
+        let mainVC = TabBarController.instanceFromNib()
+        mainVC.modalTransitionStyle = .crossDissolve
+        mainVC.modalPresentationStyle = .fullScreen
+        self.present(mainVC, animated: true) {
             self.navigationController?.popToRootViewController(animated: true)
         }
     }

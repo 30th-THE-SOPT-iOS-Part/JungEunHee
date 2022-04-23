@@ -42,7 +42,7 @@ final class TabBarController: UITabBarController {
             tabs[$0.rawValue].tabBarItem.tag = $0.rawValue
         }
         
-        setViewControllers(tabs, animated: true)
+        setViewControllers(tabs, animated: false)
     }
     
     private func setTabBarAppearance() {
@@ -60,6 +60,6 @@ extension TabBarController: UITabBarControllerDelegate {
             tabBar.backgroundColor = Const.Color.black
             tabBar.tintColor = Const.Color.white
             tabBar.unselectedItemTintColor = Const.Color.white
-        }
+        } else { setTabBarAppearance() }
     }
 }
