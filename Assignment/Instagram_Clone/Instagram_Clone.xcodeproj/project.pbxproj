@@ -119,13 +119,13 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
-		F669CD2B2812CE5800EAE8E7 /* TabBar */ = {
+		F669CD2B2812CE5800EAE8E7 /* Main */ = {
 			isa = PBXGroup;
 			children = (
 				F669CD312812CF9500EAE8E7 /* Controllers */,
 				F669CD2E2812CF6A00EAE8E7 /* Tab */,
 			);
-			path = TabBar;
+			path = Main;
 			sourceTree = "<group>";
 		};
 		F669CD2E2812CF6A00EAE8E7 /* Tab */ = {
@@ -342,7 +342,7 @@
 		F6955A1027FB7AEF005656AB /* Presentation */ = {
 			isa = PBXGroup;
 			children = (
-				F669CD2B2812CE5800EAE8E7 /* TabBar */,
+				F669CD2B2812CE5800EAE8E7 /* Main */,
 				F6955A1227FB7B41005656AB /* Common */,
 				F6955A1127FB7B02005656AB /* SignIn */,
 				F6955A1727FB8DFF005656AB /* SignUp */,

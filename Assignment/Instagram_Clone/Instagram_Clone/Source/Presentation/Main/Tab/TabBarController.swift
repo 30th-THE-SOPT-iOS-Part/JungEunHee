@@ -16,11 +16,16 @@ final class TabBarController: UITabBarController {
     override func viewDidLoad() {
         super.viewDidLoad()
 
+        assignDelegation()
         setTabBarItems()
         setTabBarAppearance()
     }
     
     // MARK: - Functions
+    private func assignDelegation() {
+        tabBarController?.delegate = self
+    }
+    
     override func viewDidLayoutSubviews() {
         super.viewDidLayoutSubviews()
         
