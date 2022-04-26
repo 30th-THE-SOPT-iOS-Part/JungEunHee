@@ -59,12 +59,10 @@ final class WelcomeView: UIView {
         welcomeLabel.snp.makeConstraints {
             $0.centerX.equalToSuperview()
             $0.top.equalToSuperview().offset(310)
-            $0.leading.equalToSuperview().offset(75)
         }
         descriptionLabel.snp.makeConstraints {
             $0.centerX.equalToSuperview()
             $0.top.equalTo(welcomeLabel.snp.bottom).inset(-23)
-            $0.leading.equalToSuperview().offset(35)
         }
         doneButton.snp.makeConstraints {
             $0.width.equalTo(UIScreen.main.bounds.width - 38)
@@ -75,7 +73,6 @@ final class WelcomeView: UIView {
         anotherLoginButton.snp.makeConstraints {
             $0.centerX.equalToSuperview()
             $0.top.equalTo(doneButton.snp.bottom).inset(-18)
-            $0.leading.equalToSuperview().offset(114)
         }
     }
 }
