@@ -28,6 +28,21 @@ extension Const {
         static let icnShopSelected = UIImage(named: "icn_shop_selected")
         static let icnProfile = UIImage(named: "icn_profile")
         static let icnProfileSelected = UIImage(named: "icn_profile_selected")
+        
+        // feedIcon
+        static let icnAvantar1 = UIImage(named: "icnAvantar1")
+        static let icnAvantar2 = UIImage(named: "icnAvantar2")
+        static let icnAvantar3 = UIImage(named: "icnAvantar3")
+        static let icnAvantar4 = UIImage(named: "icnAvantar4")
+        static let icnAvantar5 = UIImage(named: "icnAvantar5")
+        static let icnAvantar6 = UIImage(named: "icnAvantar6")
+        static let icnAdd = UIImage(named: "icnAdd")
+        static let icnBookmark = UIImage(named: "icnBookmark")
+        static let icnComment = UIImage(named: "icnComment")
+        static let icnLike = UIImage(named: "icnLike")
+        static let icnMore = UIImage(named: "icnMore")
+        static let icnShare = UIImage(named: "icnShare")
+        static let icnUnlike = UIImage(named: "icnUnlike")
     }
     
 }
