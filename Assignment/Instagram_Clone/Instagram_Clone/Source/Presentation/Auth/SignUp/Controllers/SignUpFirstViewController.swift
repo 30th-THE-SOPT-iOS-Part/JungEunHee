@@ -22,13 +22,9 @@ final class SignUpFirstViewController: BaseViewController {
     // MARK: - Functions
     override func setNavigation() {
         super.setNavigation()
-        
-        navigationController?.navigationBar.isHidden = true
     }
     
     override func setStyle() {
-        super.setStyle()
-        
         signUpFirstView.titleLabel.text = "사용자 이름 만들기"
         signUpFirstView.descriptionLabel.text = """
         새 계정에 사용할 사용자 이름을 선택하세요. 나중에
@@ -43,10 +39,10 @@ final class SignUpFirstViewController: BaseViewController {
 }
 
 extension SignUpFirstViewController: SignUpViewDelegate {
-    internal func dismissButtonClicked() {
+    func dismissButtonClicked() {
         self.navigationController?.popViewController(animated: true)
     }
-    internal func nextButtonClicked() {
+    func nextButtonClicked() {
         UserDefaults.standard.set(signUpFirstView.inputTextField.text, forKey: "userName")
         let nextVC = SignUpSecondViewController.instanceFromNib()
         self.navigationController?.pushViewController(nextVC, animated: true)

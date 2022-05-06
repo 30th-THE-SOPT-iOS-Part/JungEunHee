@@ -21,7 +21,9 @@ class BaseViewController: UIViewController {
     
     // MARK: - Functions
     public func setHierarchy() { }
-    public func setNavigation() { }
+    public func setNavigation() {
+        navigationController?.navigationBar.isHidden = true
+    }
     public func setStyle() { }
     public func setTargets() { }
 }
