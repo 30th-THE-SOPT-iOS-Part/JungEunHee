@@ -54,6 +54,7 @@
 		F6955A0D27FB444E005656AB /* Color.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = F6955A0C27FB444E005656AB /* Color.xcassets */; };
 		F6955A1427FB7B9E005656AB /* BlueButton.swift in Sources */ = {isa = PBXBuildFile; fileRef = F6955A1327FB7B9E005656AB /* BlueButton.swift */; };
 		F6955A1627FB8131005656AB /* UITextField+.swift in Sources */ = {isa = PBXBuildFile; fileRef = F6955A1527FB8131005656AB /* UITextField+.swift */; };
+		F6EA749528257D4E00163B2E /* BaseView.swift in Sources */ = {isa = PBXBuildFile; fileRef = F6EA749428257D4E00163B2E /* BaseView.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -104,6 +105,7 @@
 		F6955A0C27FB444E005656AB /* Color.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Color.xcassets; sourceTree = "<group>"; };
 		F6955A1327FB7B9E005656AB /* BlueButton.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BlueButton.swift; sourceTree = "<group>"; };
 		F6955A1527FB8131005656AB /* UITextField+.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UITextField+.swift"; sourceTree = "<group>"; };
+		F6EA749428257D4E00163B2E /* BaseView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BaseView.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -365,6 +367,7 @@
 				F6955A1327FB7B9E005656AB /* BlueButton.swift */,
 				F66CD5CB27FB8EC300ACBCD1 /* SignUpView.swift */,
 				F66CD5DC27FD203500ACBCD1 /* SignUpView.xib */,
+				F6EA749428257D4E00163B2E /* BaseView.swift */,
 			);
 			path = Common;
 			sourceTree = "<group>";
@@ -515,6 +518,7 @@
 				F66CD5EC27FD5E1C00ACBCD1 /* WelcomeView.swift in Sources */,
 				F69559B827FA9C8C005656AB /* SceneDelegate.swift in Sources */,
 				F69559F227FB12BE005656AB /* Const.swift in Sources */,
+				F6EA749528257D4E00163B2E /* BaseView.swift in Sources */,
 				F66CD5E127FD24DA00ACBCD1 /* SignUpFirstViewController.swift in Sources */,
 				F6955A1427FB7B9E005656AB /* BlueButton.swift in Sources */,
 			);
