@@ -7,6 +7,18 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		F669CD2A2812CCCD00EAE8E7 /* TabbarItem.swift in Sources */ = {isa = PBXBuildFile; fileRef = F669CD292812CCCD00EAE8E7 /* TabbarItem.swift */; };
+		F669CD2D2812CE8000EAE8E7 /* TabBarController.swift in Sources */ = {isa = PBXBuildFile; fileRef = F669CD2C2812CE8000EAE8E7 /* TabBarController.swift */; };
+		F669CD342812CFA100EAE8E7 /* HomeViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = F669CD322812CFA100EAE8E7 /* HomeViewController.swift */; };
+		F669CD352812CFA100EAE8E7 /* HomeViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = F669CD332812CFA100EAE8E7 /* HomeViewController.xib */; };
+		F669CD382812CFAF00EAE8E7 /* SearchViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = F669CD362812CFAF00EAE8E7 /* SearchViewController.swift */; };
+		F669CD392812CFAF00EAE8E7 /* SearchViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = F669CD372812CFAF00EAE8E7 /* SearchViewController.xib */; };
+		F669CD3C2812CFB600EAE8E7 /* ReelsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = F669CD3A2812CFB600EAE8E7 /* ReelsViewController.swift */; };
+		F669CD3D2812CFB600EAE8E7 /* ReelsViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = F669CD3B2812CFB600EAE8E7 /* ReelsViewController.xib */; };
+		F669CD402812CFC800EAE8E7 /* ShopViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = F669CD3E2812CFC800EAE8E7 /* ShopViewController.swift */; };
+		F669CD412812CFC800EAE8E7 /* ShopViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = F669CD3F2812CFC800EAE8E7 /* ShopViewController.xib */; };
+		F669CD442812CFD000EAE8E7 /* ProfileViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = F669CD422812CFD000EAE8E7 /* ProfileViewController.swift */; };
+		F669CD452812CFD000EAE8E7 /* ProfileViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = F669CD432812CFD000EAE8E7 /* ProfileViewController.xib */; };
 		F66CD5CC27FB8EC300ACBCD1 /* SignUpView.swift in Sources */ = {isa = PBXBuildFile; fileRef = F66CD5CB27FB8EC300ACBCD1 /* SignUpView.swift */; };
 		F66CD5DD27FD203500ACBCD1 /* SignUpView.xib in Resources */ = {isa = PBXBuildFile; fileRef = F66CD5DC27FD203500ACBCD1 /* SignUpView.xib */; };
 		F66CD5E127FD24DA00ACBCD1 /* SignUpFirstViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = F66CD5DF27FD24DA00ACBCD1 /* SignUpFirstViewController.swift */; };
@@ -45,6 +57,18 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		F669CD292812CCCD00EAE8E7 /* TabbarItem.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TabbarItem.swift; sourceTree = "<group>"; };
+		F669CD2C2812CE8000EAE8E7 /* TabBarController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TabBarController.swift; sourceTree = "<group>"; };
+		F669CD322812CFA100EAE8E7 /* HomeViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeViewController.swift; sourceTree = "<group>"; };
+		F669CD332812CFA100EAE8E7 /* HomeViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = HomeViewController.xib; sourceTree = "<group>"; };
+		F669CD362812CFAF00EAE8E7 /* SearchViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SearchViewController.swift; sourceTree = "<group>"; };
+		F669CD372812CFAF00EAE8E7 /* SearchViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = SearchViewController.xib; sourceTree = "<group>"; };
+		F669CD3A2812CFB600EAE8E7 /* ReelsViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ReelsViewController.swift; sourceTree = "<group>"; };
+		F669CD3B2812CFB600EAE8E7 /* ReelsViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = ReelsViewController.xib; sourceTree = "<group>"; };
+		F669CD3E2812CFC800EAE8E7 /* ShopViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ShopViewController.swift; sourceTree = "<group>"; };
+		F669CD3F2812CFC800EAE8E7 /* ShopViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = ShopViewController.xib; sourceTree = "<group>"; };
+		F669CD422812CFD000EAE8E7 /* ProfileViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProfileViewController.swift; sourceTree = "<group>"; };
+		F669CD432812CFD000EAE8E7 /* ProfileViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = ProfileViewController.xib; sourceTree = "<group>"; };
 		F66CD5CB27FB8EC300ACBCD1 /* SignUpView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SignUpView.swift; sourceTree = "<group>"; };
 		F66CD5DC27FD203500ACBCD1 /* SignUpView.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = SignUpView.xib; sourceTree = "<group>"; };
 		F66CD5DF27FD24DA00ACBCD1 /* SignUpFirstViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SignUpFirstViewController.swift; sourceTree = "<group>"; };
@@ -95,6 +119,66 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		F669CD2B2812CE5800EAE8E7 /* Main */ = {
+			isa = PBXGroup;
+			children = (
+				F669CD312812CF9500EAE8E7 /* Controllers */,
+				F669CD2E2812CF6A00EAE8E7 /* Tab */,
+			);
+			path = Main;
+			sourceTree = "<group>";
+		};
+		F669CD2E2812CF6A00EAE8E7 /* Tab */ = {
+			isa = PBXGroup;
+			children = (
+				F669CD292812CCCD00EAE8E7 /* TabbarItem.swift */,
+				F669CD2C2812CE8000EAE8E7 /* TabBarController.swift */,
+			);
+			path = Tab;
+			sourceTree = "<group>";
+		};
+		F669CD312812CF9500EAE8E7 /* Controllers */ = {
+			isa = PBXGroup;
+			children = (
+				F669CD322812CFA100EAE8E7 /* HomeViewController.swift */,
+				F669CD362812CFAF00EAE8E7 /* SearchViewController.swift */,
+				F669CD3A2812CFB600EAE8E7 /* ReelsViewController.swift */,
+				F669CD3E2812CFC800EAE8E7 /* ShopViewController.swift */,
+				F669CD422812CFD000EAE8E7 /* ProfileViewController.swift */,
+			);
+			path = Controllers;
+			sourceTree = "<group>";
+		};
+		F669CD472812D2D900EAE8E7 /* Xibs */ = {
+			isa = PBXGroup;
+			children = (
+				F669CD482812F4A100EAE8E7 /* Auth */,
+				F669CD492812F4AF00EAE8E7 /* Main */,
+			);
+			path = Xibs;
+			sourceTree = "<group>";
+		};
+		F669CD482812F4A100EAE8E7 /* Auth */ = {
+			isa = PBXGroup;
+			children = (
+				F66CD5E027FD24DA00ACBCD1 /* SignUpFirstViewController.xib */,
+				F66CD5E527FD2CA000ACBCD1 /* SignUpSecondViewController.xib */,
+			);
+			path = Auth;
+			sourceTree = "<group>";
+		};
+		F669CD492812F4AF00EAE8E7 /* Main */ = {
+			isa = PBXGroup;
+			children = (
+				F669CD432812CFD000EAE8E7 /* ProfileViewController.xib */,
+				F669CD3F2812CFC800EAE8E7 /* ShopViewController.xib */,
+				F669CD3B2812CFB600EAE8E7 /* ReelsViewController.xib */,
+				F669CD372812CFAF00EAE8E7 /* SearchViewController.xib */,
+				F669CD332812CFA100EAE8E7 /* HomeViewController.xib */,
+			);
+			path = Main;
+			sourceTree = "<group>";
+		};
 		F66CD5D327FC026000ACBCD1 /* Views */ = {
 			isa = PBXGroup;
 			children = (
@@ -157,6 +241,7 @@
 		F69559C927FA9CA1005656AB /* Resource */ = {
 			isa = PBXGroup;
 			children = (
+				F669CD472812D2D900EAE8E7 /* Xibs */,
 				F69559DF27FB0CF0005656AB /* Fonts */,
 				F69559CA27FA9CB1005656AB /* Storyboards */,
 				F69559BE27FA9C8E005656AB /* Assets.xcassets */,
@@ -257,10 +342,9 @@
 		F6955A1027FB7AEF005656AB /* Presentation */ = {
 			isa = PBXGroup;
 			children = (
+				F6F6280A28184681006BDF67 /* Auth */,
+				F669CD2B2812CE5800EAE8E7 /* Main */,
 				F6955A1227FB7B41005656AB /* Common */,
-				F6955A1127FB7B02005656AB /* SignIn */,
-				F6955A1727FB8DFF005656AB /* SignUp */,
-				F66CD5E827FD5DF500ACBCD1 /* Welcome */,
 			);
 			path = Presentation;
 			sourceTree = "<group>";
@@ -296,12 +380,20 @@
 		F6955A1827FB8E08005656AB /* Controllers */ = {
 			isa = PBXGroup;
 			children = (
-				F66CD5E027FD24DA00ACBCD1 /* SignUpFirstViewController.xib */,
 				F66CD5DF27FD24DA00ACBCD1 /* SignUpFirstViewController.swift */,
-				F66CD5E527FD2CA000ACBCD1 /* SignUpSecondViewController.xib */,
 				F66CD5E427FD2CA000ACBCD1 /* SignUpSecondViewController.swift */,
 			);
 			path = Controllers;
+			sourceTree = "<group>";
+		};
+		F6F6280A28184681006BDF67 /* Auth */ = {
+			isa = PBXGroup;
+			children = (
+				F6955A1127FB7B02005656AB /* SignIn */,
+				F6955A1727FB8DFF005656AB /* SignUp */,
+				F66CD5E827FD5DF500ACBCD1 /* Welcome */,
+			);
+			path = Auth;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -372,15 +464,20 @@
 			files = (
 				F69559E727FB0EF6005656AB /* SF-Pro-Display-Bold.otf in Resources */,
 				F6955A0D27FB444E005656AB /* Color.xcassets in Resources */,
+				F669CD3D2812CFB600EAE8E7 /* ReelsViewController.xib in Resources */,
 				F69559C227FA9C8E005656AB /* LaunchScreen.storyboard in Resources */,
 				F66CD5E227FD24DA00ACBCD1 /* SignUpFirstViewController.xib in Resources */,
 				F69559D827FAA339005656AB /* Image.xcassets in Resources */,
 				F69559E627FB0EF6005656AB /* SF-Pro-Display-Semibold.otf in Resources */,
 				F69559E127FB0DD2005656AB /* SF-Pro-Display-Regular.otf in Resources */,
 				F66CD5DD27FD203500ACBCD1 /* SignUpView.xib in Resources */,
+				F669CD412812CFC800EAE8E7 /* ShopViewController.xib in Resources */,
+				F669CD452812CFD000EAE8E7 /* ProfileViewController.xib in Resources */,
 				F69559BF27FA9C8E005656AB /* Assets.xcassets in Resources */,
 				F66CD5E727FD2CA000ACBCD1 /* SignUpSecondViewController.xib in Resources */,
 				F69559E827FB0EF6005656AB /* SF-Pro-Display-Medium.otf in Resources */,
+				F669CD352812CFA100EAE8E7 /* HomeViewController.xib in Resources */,
+				F669CD392812CFAF00EAE8E7 /* SearchViewController.xib in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -391,18 +488,25 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				F669CD342812CFA100EAE8E7 /* HomeViewController.swift in Sources */,
 				F69559F927FB183E005656AB /* UIViewController+NibCreatable.swift in Sources */,
 				F69559BA27FA9C8C005656AB /* SignInViewController.swift in Sources */,
+				F669CD2A2812CCCD00EAE8E7 /* TabbarItem.swift in Sources */,
 				F69559F027FB1164005656AB /* Image.swift in Sources */,
 				F69559FE27FB1ACD005656AB /* UIView+NibCreatable.swift in Sources */,
 				F66CD5E627FD2CA000ACBCD1 /* SignUpSecondViewController.swift in Sources */,
 				F69559FC27FB18A2005656AB /* NibCreatable.swift in Sources */,
+				F669CD382812CFAF00EAE8E7 /* SearchViewController.swift in Sources */,
 				F66CD5EA27FD5E0D00ACBCD1 /* WelcomeViewController.swift in Sources */,
 				F69559F727FB15E5005656AB /* UIView+.swift in Sources */,
+				F669CD2D2812CE8000EAE8E7 /* TabBarController.swift in Sources */,
+				F669CD402812CFC800EAE8E7 /* ShopViewController.swift in Sources */,
+				F669CD442812CFD000EAE8E7 /* ProfileViewController.swift in Sources */,
 				F6955A1627FB8131005656AB /* UITextField+.swift in Sources */,
 				F6955A0227FB1BBC005656AB /* Reusable.swift in Sources */,
 				F69559D227FA9D75005656AB /* BaseViewController.swift in Sources */,
 				F66CD5CC27FB8EC300ACBCD1 /* SignUpView.swift in Sources */,
+				F669CD3C2812CFB600EAE8E7 /* ReelsViewController.swift in Sources */,
 				F6955A0027FB1B62005656AB /* UIStackView+.swift in Sources */,
 				F6955A0727FB3677005656AB /* SignInView.swift in Sources */,
 				F6955A0427FB1EA1005656AB /* Color.swift in Sources */,
