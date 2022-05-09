@@ -43,6 +43,12 @@ extension Const {
         static let icnMore = UIImage(named: "icnMore")
         static let icnShare = UIImage(named: "icnShare")
         static let icnUnlike = UIImage(named: "icnUnlike")
+        
+        // feedImage
+        static let postImage1 = UIImage(named: "postImage1")
+        static let postImage2 = UIImage(named: "postImage2")
+        static let postImage3 = UIImage(named: "postImage3")
+        static let postImage4 = UIImage(named: "postImage4")
     }
     
 }
