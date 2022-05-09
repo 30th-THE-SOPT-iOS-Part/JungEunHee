@@ -48,7 +48,6 @@
 		F69559FC27FB18A2005656AB /* NibCreatable.swift in Sources */ = {isa = PBXBuildFile; fileRef = F69559FB27FB18A2005656AB /* NibCreatable.swift */; };
 		F69559FE27FB1ACD005656AB /* UIView+NibCreatable.swift in Sources */ = {isa = PBXBuildFile; fileRef = F69559FD27FB1ACD005656AB /* UIView+NibCreatable.swift */; };
 		F6955A0027FB1B62005656AB /* UIStackView+.swift in Sources */ = {isa = PBXBuildFile; fileRef = F69559FF27FB1B62005656AB /* UIStackView+.swift */; };
-		F6955A0227FB1BBC005656AB /* Reusable.swift in Sources */ = {isa = PBXBuildFile; fileRef = F6955A0127FB1BBC005656AB /* Reusable.swift */; };
 		F6955A0427FB1EA1005656AB /* Color.swift in Sources */ = {isa = PBXBuildFile; fileRef = F6955A0327FB1EA1005656AB /* Color.swift */; };
 		F6955A0727FB3677005656AB /* SignInView.swift in Sources */ = {isa = PBXBuildFile; fileRef = F6955A0627FB3677005656AB /* SignInView.swift */; };
 		F6955A0D27FB444E005656AB /* Color.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = F6955A0C27FB444E005656AB /* Color.xcassets */; };
@@ -105,7 +104,6 @@
 		F69559FB27FB18A2005656AB /* NibCreatable.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NibCreatable.swift; sourceTree = "<group>"; };
 		F69559FD27FB1ACD005656AB /* UIView+NibCreatable.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UIView+NibCreatable.swift"; sourceTree = "<group>"; };
 		F69559FF27FB1B62005656AB /* UIStackView+.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UIStackView+.swift"; sourceTree = "<group>"; };
-		F6955A0127FB1BBC005656AB /* Reusable.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Reusable.swift; sourceTree = "<group>"; };
 		F6955A0327FB1EA1005656AB /* Color.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Color.swift; sourceTree = "<group>"; };
 		F6955A0627FB3677005656AB /* SignInView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SignInView.swift; sourceTree = "<group>"; };
 		F6955A0C27FB444E005656AB /* Color.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Color.xcassets; sourceTree = "<group>"; };
@@ -348,7 +346,6 @@
 			isa = PBXGroup;
 			children = (
 				F69559FB27FB18A2005656AB /* NibCreatable.swift */,
-				F6955A0127FB1BBC005656AB /* Reusable.swift */,
 			);
 			path = Protocols;
 			sourceTree = "<group>";
@@ -545,7 +542,6 @@
 				F669CD402812CFC800EAE8E7 /* ShopViewController.swift in Sources */,
 				F669CD442812CFD000EAE8E7 /* ProfileViewController.swift in Sources */,
 				F6955A1627FB8131005656AB /* UITextField+.swift in Sources */,
-				F6955A0227FB1BBC005656AB /* Reusable.swift in Sources */,
 				F69559D227FA9D75005656AB /* BaseViewController.swift in Sources */,
 				F6B6934D2828FD7600012C13 /* FeedCollectionViewCell.swift in Sources */,
 				F66CD5CC27FB8EC300ACBCD1 /* SignUpView.swift in Sources */,
