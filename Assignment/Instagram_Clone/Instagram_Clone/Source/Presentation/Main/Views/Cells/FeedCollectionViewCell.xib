@@ -10,7 +10,7 @@
     <objects>
         <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
         <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
-        <collectionViewCell opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" reuseIdentifier="StoryCollectionViewCell" id="gTV-IL-0wX" customClass="FeedCollectionViewCell" customModule="Instagram_Clone" customModuleProvider="target">
+        <collectionViewCell opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" reuseIdentifier="FeedCollectionViewCell" id="gTV-IL-0wX" customClass="FeedCollectionViewCell" customModule="Instagram_Clone" customModuleProvider="target">
             <rect key="frame" x="0.0" y="0.0" width="375" height="488"/>
             <autoresizingMask key="autoresizingMask"/>
             <view key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center">
@@ -115,7 +115,7 @@
                     <stackView opaque="NO" contentMode="scaleToFill" spacing="4" translatesAutoresizingMaskIntoConstraints="NO" id="flw-eV-5np">
                         <rect key="frame" x="12" y="446" width="58" height="14"/>
                         <subviews>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" usesAttributedText="YES" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="rkG-4L-5Vh">
+                            <label opaque="NO" userInteractionEnabled="NO" tag="1" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" usesAttributedText="YES" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="rkG-4L-5Vh">
                                 <rect key="frame" x="0.0" y="0.0" width="29.5" height="14"/>
                                 <attributedString key="attributedText">
                                     <fragment content="Label">
@@ -126,7 +126,7 @@
                                 </attributedString>
                                 <nil key="highlightedColor"/>
                             </label>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" usesAttributedText="YES" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="mEC-10-E8s">
+                            <label opaque="NO" userInteractionEnabled="NO" tag="2" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" usesAttributedText="YES" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="mEC-10-E8s">
                                 <rect key="frame" x="33.5" y="0.0" width="24.5" height="14"/>
                                 <attributedString key="attributedText">
                                     <fragment content="Label">
@@ -140,7 +140,7 @@
                             </label>
                         </subviews>
                     </stackView>
-                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" usesAttributedText="YES" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="3hc-8H-CeW">
+                    <label opaque="NO" userInteractionEnabled="NO" tag="3" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" usesAttributedText="YES" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="3hc-8H-CeW">
                         <rect key="frame" x="12" y="465" width="24.5" height="12"/>
                         <attributedString key="attributedText">
                             <fragment content="Label">
@@ -177,6 +177,15 @@
                 <constraint firstItem="iXf-eB-96Q" firstAttribute="top" secondItem="gTV-IL-0wX" secondAttribute="top" constant="10" id="wS2-sh-R7H"/>
                 <constraint firstItem="3hc-8H-CeW" firstAttribute="top" secondItem="flw-eV-5np" secondAttribute="bottom" constant="5" id="yAj-SI-EgJ"/>
             </constraints>
+            <connections>
+                <outlet property="commentLabel" destination="3hc-8H-CeW" id="yzk-Lr-L5Z"/>
+                <outlet property="feedImage" destination="3aa-l0-bf7" id="mRJ-qb-LIr"/>
+                <outlet property="heartButton" destination="Pt6-42-CS6" id="0gn-g6-Zk8"/>
+                <outlet property="heartCount" destination="AXT-2t-8ob" id="ta3-5f-5ui"/>
+                <outlet property="profileImage" destination="3Tb-pu-CAD" id="kNg-fS-SCV"/>
+                <outlet property="topName" destination="yoC-cL-KFw" id="W1Z-yB-2e9"/>
+                <outletCollection property="contentsLabels" destination="rkG-4L-5Vh" collectionClass="NSMutableArray" id="gOa-ej-6x1"/>
+            </connections>
             <point key="canvasLocation" x="131.15942028985509" y="61.607142857142854"/>
         </collectionViewCell>
     </objects>

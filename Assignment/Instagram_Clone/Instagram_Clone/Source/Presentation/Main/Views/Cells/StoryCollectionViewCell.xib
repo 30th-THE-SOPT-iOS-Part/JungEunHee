@@ -46,6 +46,10 @@
                 <constraint firstItem="UtY-j3-NdR" firstAttribute="top" secondItem="tZd-8z-Nbk" secondAttribute="bottom" constant="2" id="Uw8-qG-fMM"/>
                 <constraint firstItem="UtY-j3-NdR" firstAttribute="leading" secondItem="gTV-IL-0wX" secondAttribute="leading" constant="13" id="mlT-5G-edH"/>
             </constraints>
+            <connections>
+                <outlet property="nameLabel" destination="UtY-j3-NdR" id="o2k-aH-WC2"/>
+                <outlet property="profileImage" destination="tZd-8z-Nbk" id="vgJ-LK-KCG"/>
+            </connections>
             <point key="canvasLocation" x="131.8840579710145" y="61.607142857142854"/>
         </collectionViewCell>
     </objects>

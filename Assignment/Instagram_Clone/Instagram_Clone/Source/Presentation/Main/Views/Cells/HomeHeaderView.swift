@@ -8,9 +8,11 @@
 import UIKit
 
 final class HomeHeaderView: UICollectionReusableView {
+    
+    static let identifier = "HomeHeaderView"
 
+    // MARK: - View Life Cycle
     override func awakeFromNib() {
         super.awakeFromNib()
-        // Initialization code
     }
 }
