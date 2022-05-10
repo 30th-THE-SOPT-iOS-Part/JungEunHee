@@ -53,14 +53,14 @@
 		F6955A0D27FB444E005656AB /* Color.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = F6955A0C27FB444E005656AB /* Color.xcassets */; };
 		F6955A1427FB7B9E005656AB /* BlueButton.swift in Sources */ = {isa = PBXBuildFile; fileRef = F6955A1327FB7B9E005656AB /* BlueButton.swift */; };
 		F6955A1627FB8131005656AB /* UITextField+.swift in Sources */ = {isa = PBXBuildFile; fileRef = F6955A1527FB8131005656AB /* UITextField+.swift */; };
-		F6B693432828FBD600012C13 /* HomeHeaderView.swift in Sources */ = {isa = PBXBuildFile; fileRef = F6B693412828FBD600012C13 /* HomeHeaderView.swift */; };
-		F6B693442828FBD600012C13 /* HomeHeaderView.xib in Resources */ = {isa = PBXBuildFile; fileRef = F6B693422828FBD600012C13 /* HomeHeaderView.xib */; };
 		F6B6934D2828FD7600012C13 /* FeedCollectionViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = F6B6934B2828FD7600012C13 /* FeedCollectionViewCell.swift */; };
 		F6B6934E2828FD7600012C13 /* FeedCollectionViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = F6B6934C2828FD7600012C13 /* FeedCollectionViewCell.xib */; };
 		F6B693512828FD7F00012C13 /* StoryCollectionViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = F6B6934F2828FD7F00012C13 /* StoryCollectionViewCell.swift */; };
 		F6B693522828FD7F00012C13 /* StoryCollectionViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = F6B693502828FD7F00012C13 /* StoryCollectionViewCell.xib */; };
 		F6B693552829041300012C13 /* FeedDataModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = F6B693542829041300012C13 /* FeedDataModel.swift */; };
 		F6B693572829041900012C13 /* StoryDataModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = F6B693562829041900012C13 /* StoryDataModel.swift */; };
+		F6B6935F282A1CD500012C13 /* HomeNavigationView.xib in Resources */ = {isa = PBXBuildFile; fileRef = F6B6935E282A1CD500012C13 /* HomeNavigationView.xib */; };
+		F6B69361282A1D8100012C13 /* HomeNavigationView.swift in Sources */ = {isa = PBXBuildFile; fileRef = F6B69360282A1D8100012C13 /* HomeNavigationView.swift */; };
 		F6EA749528257D4E00163B2E /* BaseView.swift in Sources */ = {isa = PBXBuildFile; fileRef = F6EA749428257D4E00163B2E /* BaseView.swift */; };
 /* End PBXBuildFile section */
 
@@ -111,14 +111,14 @@
 		F6955A0C27FB444E005656AB /* Color.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Color.xcassets; sourceTree = "<group>"; };
 		F6955A1327FB7B9E005656AB /* BlueButton.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BlueButton.swift; sourceTree = "<group>"; };
 		F6955A1527FB8131005656AB /* UITextField+.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UITextField+.swift"; sourceTree = "<group>"; };
-		F6B693412828FBD600012C13 /* HomeHeaderView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeHeaderView.swift; sourceTree = "<group>"; };
-		F6B693422828FBD600012C13 /* HomeHeaderView.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = HomeHeaderView.xib; sourceTree = "<group>"; };
 		F6B6934B2828FD7600012C13 /* FeedCollectionViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FeedCollectionViewCell.swift; sourceTree = "<group>"; };
 		F6B6934C2828FD7600012C13 /* FeedCollectionViewCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = FeedCollectionViewCell.xib; sourceTree = "<group>"; };
 		F6B6934F2828FD7F00012C13 /* StoryCollectionViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StoryCollectionViewCell.swift; sourceTree = "<group>"; };
 		F6B693502828FD7F00012C13 /* StoryCollectionViewCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = StoryCollectionViewCell.xib; sourceTree = "<group>"; };
 		F6B693542829041300012C13 /* FeedDataModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FeedDataModel.swift; sourceTree = "<group>"; };
 		F6B693562829041900012C13 /* StoryDataModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StoryDataModel.swift; sourceTree = "<group>"; };
+		F6B6935E282A1CD500012C13 /* HomeNavigationView.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = HomeNavigationView.xib; sourceTree = "<group>"; };
+		F6B69360282A1D8100012C13 /* HomeNavigationView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeNavigationView.swift; sourceTree = "<group>"; };
 		F6EA749428257D4E00163B2E /* BaseView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BaseView.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
@@ -415,12 +415,12 @@
 		F6B693452828FD0B00012C13 /* Cells */ = {
 			isa = PBXGroup;
 			children = (
-				F6B693412828FBD600012C13 /* HomeHeaderView.swift */,
-				F6B693422828FBD600012C13 /* HomeHeaderView.xib */,
 				F6B6934B2828FD7600012C13 /* FeedCollectionViewCell.swift */,
 				F6B6934F2828FD7F00012C13 /* StoryCollectionViewCell.swift */,
 				F6B693502828FD7F00012C13 /* StoryCollectionViewCell.xib */,
 				F6B6934C2828FD7600012C13 /* FeedCollectionViewCell.xib */,
+				F6B6935E282A1CD500012C13 /* HomeNavigationView.xib */,
+				F6B69360282A1D8100012C13 /* HomeNavigationView.swift */,
 			);
 			path = Cells;
 			sourceTree = "<group>";
@@ -515,7 +515,6 @@
 				F6B693522828FD7F00012C13 /* StoryCollectionViewCell.xib in Resources */,
 				F669CD3D2812CFB600EAE8E7 /* ReelsViewController.xib in Resources */,
 				F69559C227FA9C8E005656AB /* LaunchScreen.storyboard in Resources */,
-				F6B693442828FBD600012C13 /* HomeHeaderView.xib in Resources */,
 				F66CD5E227FD24DA00ACBCD1 /* SignUpFirstViewController.xib in Resources */,
 				F69559D827FAA339005656AB /* Image.xcassets in Resources */,
 				F69559E627FB0EF6005656AB /* SF-Pro-Display-Semibold.otf in Resources */,
@@ -529,6 +528,7 @@
 				F669CD352812CFA100EAE8E7 /* HomeViewController.xib in Resources */,
 				F6B6934E2828FD7600012C13 /* FeedCollectionViewCell.xib in Resources */,
 				F669CD392812CFAF00EAE8E7 /* SearchViewController.xib in Resources */,
+				F6B6935F282A1CD500012C13 /* HomeNavigationView.xib in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -547,7 +547,6 @@
 				F69559F027FB1164005656AB /* Image.swift in Sources */,
 				F69559FE27FB1ACD005656AB /* UIView+NibCreatable.swift in Sources */,
 				F66CD5E627FD2CA000ACBCD1 /* SignUpSecondViewController.swift in Sources */,
-				F6B693432828FBD600012C13 /* HomeHeaderView.swift in Sources */,
 				F69559FC27FB18A2005656AB /* NibCreatable.swift in Sources */,
 				F669CD382812CFAF00EAE8E7 /* SearchViewController.swift in Sources */,
 				F66CD5EA27FD5E0D00ACBCD1 /* WelcomeViewController.swift in Sources */,
@@ -565,6 +564,7 @@
 				F6B693572829041900012C13 /* StoryDataModel.swift in Sources */,
 				F6955A0727FB3677005656AB /* SignInView.swift in Sources */,
 				F6955A0427FB1EA1005656AB /* Color.swift in Sources */,
+				F6B69361282A1D8100012C13 /* HomeNavigationView.swift in Sources */,
 				F69559EE27FB1030005656AB /* Font.swift in Sources */,
 				F69559B627FA9C8C005656AB /* AppDelegate.swift in Sources */,
 				F66CD5EC27FD5E1C00ACBCD1 /* WelcomeView.swift in Sources */,

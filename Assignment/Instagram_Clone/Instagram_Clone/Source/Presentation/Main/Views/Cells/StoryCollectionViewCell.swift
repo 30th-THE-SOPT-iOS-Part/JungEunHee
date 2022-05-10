@@ -8,7 +8,6 @@
 import UIKit
 
 final class StoryCollectionViewCell: UICollectionViewCell {
-    
     static let identifier = "StoryCollectionViewCell"
     
     // MARK: - @IBOutlet Properties
@@ -22,7 +21,7 @@ final class StoryCollectionViewCell: UICollectionViewCell {
 }
 
 extension StoryCollectionViewCell {
-    private func setData(data: StoryDataModel) {
+    func setData(data: StoryDataModel) {
         profileImage.image = data.profileImage
         nameLabel.text = data.profileName
     }

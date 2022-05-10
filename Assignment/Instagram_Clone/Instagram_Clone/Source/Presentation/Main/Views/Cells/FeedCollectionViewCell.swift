@@ -8,7 +8,6 @@
 import UIKit
 
 final class FeedCollectionViewCell: UICollectionViewCell {
-    
     static let identifier = "FeedCollectionViewCell"
     
     // MARK: - @IBOutlet Properties
@@ -28,10 +27,10 @@ final class FeedCollectionViewCell: UICollectionViewCell {
 
 // MARK: - Extensions
 extension FeedCollectionViewCell {
-    private func setData(data: FeedDataModel) {
-        profileImage.image = data.profileImage
+    func setData(data: FeedDataModel) {
+        profileImage.image = data.makeProfileImage()
         topName.text = data.topName
-        feedImage.image = data.feedImage
+        feedImage.image = data.makeFeedImage()
         heartCount.text = data.heartCountDescription
         contentsLabels[1].text = data.bottomName
         contentsLabels[2].text = data.description
