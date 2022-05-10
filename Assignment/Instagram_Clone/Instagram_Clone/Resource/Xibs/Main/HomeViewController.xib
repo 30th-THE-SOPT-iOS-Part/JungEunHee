@@ -65,7 +65,6 @@
                 <constraint firstItem="u1Y-dT-aPa" firstAttribute="top" secondItem="llP-Xu-LNE" secondAttribute="bottom" id="taA-dA-W6r"/>
                 <constraint firstItem="fnl-2z-Ty3" firstAttribute="bottom" secondItem="u1Y-dT-aPa" secondAttribute="bottom" id="wAO-Gu-Ppk"/>
             </constraints>
-            <point key="canvasLocation" x="132" y="62"/>
         </view>
     </objects>
     <resources>
