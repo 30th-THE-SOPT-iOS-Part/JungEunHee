@@ -58,9 +58,11 @@ extension HomeViewController: UICollectionViewDataSource {
         switch collectionView {
         case topCollectionView:
             guard let topCell = topCollectionView.dequeueReusableCell(withReuseIdentifier: StoryCollectionViewCell.identifier, for: indexPath) as? StoryCollectionViewCell else { return UICollectionViewCell() }
+            topCell.setData(data: storyList[indexPath.row])
             return topCell
         case feedCollectionView:
             guard let feedCell = feedCollectionView.dequeueReusableCell(withReuseIdentifier: FeedCollectionViewCell.identifier, for: indexPath) as? FeedCollectionViewCell else { return UICollectionViewCell() }
+            feedCell.setData(data: feedList[indexPath.row])
             return feedCell
         default:
             return UICollectionViewCell()
