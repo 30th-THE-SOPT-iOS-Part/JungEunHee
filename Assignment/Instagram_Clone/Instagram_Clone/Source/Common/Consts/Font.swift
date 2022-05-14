@@ -8,7 +8,7 @@
 import UIKit.UIFont
 
 extension Const {
-    public enum Font: String {
+    enum Font: String {
         // SFPro Font
         case SFProDisplayBold = "SF-Pro-Display-Bold"
         case SFProDisplayMedium = "SF-Pro-Display-Medium"

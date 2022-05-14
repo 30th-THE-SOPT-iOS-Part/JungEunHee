@@ -25,8 +25,6 @@ final class WelcomeViewController: BaseViewController {
     
     // MARK: - Functions
     override func setTargets() {
-        super.setTargets()
-        
         welcomeView.doneButton.addTarget(self, action: #selector(addPresentation), for: .touchUpInside)
         welcomeView.anotherLoginButton.addTarget(self, action: #selector(addDissmiss), for: .touchUpInside)
     }

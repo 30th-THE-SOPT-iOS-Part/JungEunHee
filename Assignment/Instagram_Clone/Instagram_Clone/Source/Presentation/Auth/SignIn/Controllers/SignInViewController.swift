@@ -33,8 +33,6 @@ final class SignInViewController: BaseViewController {
     
     // MARK: - Functions
     override func setTargets() {
-        super.setTargets()
-        
         [signInView.signUpButton, signInView.idTextField, signInView.passwordTextField].forEach {
             $0.addTarget(self, action: #selector(textFieldDidChanged(_:)), for: .editingChanged)
         }

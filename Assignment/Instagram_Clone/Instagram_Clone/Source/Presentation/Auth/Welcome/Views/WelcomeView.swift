@@ -10,7 +10,7 @@ import UIKit
 import SnapKit
 import Then
 
-final class WelcomeView: UIView {
+final class WelcomeView: BaseView {
 
     // MARK: - Properties
     public let welcomeLabel = UILabel().then {
@@ -37,25 +37,12 @@ final class WelcomeView: UIView {
         $0.titleLabel?.font = UIFont.systemFont(ofSize: 14)
     }
     
-    // MARK: - Initialization
-    override init(frame: CGRect) {
-        super.init(frame: frame)
-        
-        setUI()
-        setConstraints()
-    }
-    
-    @available(*, unavailable)
-    required init?(coder: NSCoder) {
-        fatalError()
-    }
-    
     // MARK: - Functions
-    private func setUI() {
+    override func setupViews() {
         addSubviews(welcomeLabel, descriptionLabel, doneButton, anotherLoginButton)
     }
     
-    private func setConstraints() {
+    override func setupConstraints() {
         welcomeLabel.snp.makeConstraints {
             $0.centerX.equalToSuperview()
             $0.top.equalToSuperview().offset(310)

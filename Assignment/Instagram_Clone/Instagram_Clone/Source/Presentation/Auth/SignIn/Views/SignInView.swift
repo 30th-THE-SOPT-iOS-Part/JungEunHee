@@ -10,7 +10,7 @@ import UIKit
 import SnapKit
 import Then
 
-final class SignInView: UIView {
+final class SignInView: BaseView {
     
     // MARK: - Properties
     private let logoImageView = UIImageView().then {
@@ -74,27 +74,14 @@ final class SignInView: UIView {
         $0.spacing = 5
     }
     
-    // MARK: - Initialization
-    override init(frame: CGRect) {
-        super.init(frame: frame)
-        
-        setUI()
-        setConstraints()
-    }
-    
-    @available(*, unavailable)
-    required init?(coder: NSCoder) {
-        fatalError()
-    }
-    
     // MARK: - Functions
-    private func setUI() {
+    override func setupViews() {
        addSubviews(logoImageView, inputStackView, hideButton, signInButton, signUpHelpStack)
         inputStackView.addArrangedSubviews(idTextField, passwordTextField, passwordHelpLabel)
         signUpHelpStack.addArrangedSubviews(authHelpLabel, signUpButton)
     }
     
-    private func setConstraints() {
+    override func setupConstraints() {
         logoImageView.snp.makeConstraints {
             $0.width.equalTo(175)
             $0.height.equalTo(45)

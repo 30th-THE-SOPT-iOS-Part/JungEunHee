@@ -10,6 +10,8 @@
     <objects>
         <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner" customClass="HomeViewController" customModule="Instagram_Clone" customModuleProvider="target">
             <connections>
+                <outlet property="feedCollectionView" destination="u1Y-dT-aPa" id="a28-0e-HeO"/>
+                <outlet property="topCollectionView" destination="llP-Xu-LNE" id="sqh-V3-q8C"/>
                 <outlet property="view" destination="i5M-Pr-FkT" id="sfx-zR-JGt"/>
             </connections>
         </placeholder>
@@ -17,9 +19,52 @@
         <view clearsContextBeforeDrawing="NO" contentMode="scaleToFill" id="i5M-Pr-FkT">
             <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
             <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+            <subviews>
+                <collectionView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" showsHorizontalScrollIndicator="NO" showsVerticalScrollIndicator="NO" dataMode="none" translatesAutoresizingMaskIntoConstraints="NO" id="llP-Xu-LNE">
+                    <rect key="frame" x="0.0" y="88" width="414" height="84"/>
+                    <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                    <constraints>
+                        <constraint firstAttribute="height" constant="84" id="yRq-YR-Pt9"/>
+                    </constraints>
+                    <collectionViewFlowLayout key="collectionViewLayout" scrollDirection="horizontal" minimumLineSpacing="10" minimumInteritemSpacing="10" id="Ezw-uz-FGm">
+                        <size key="itemSize" width="128" height="128"/>
+                        <size key="headerReferenceSize" width="0.0" height="0.0"/>
+                        <size key="footerReferenceSize" width="0.0" height="0.0"/>
+                        <inset key="sectionInset" minX="0.0" minY="0.0" maxX="0.0" maxY="0.0"/>
+                    </collectionViewFlowLayout>
+                </collectionView>
+                <collectionView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" showsHorizontalScrollIndicator="NO" showsVerticalScrollIndicator="NO" dataMode="none" translatesAutoresizingMaskIntoConstraints="NO" id="u1Y-dT-aPa">
+                    <rect key="frame" x="0.0" y="172" width="414" height="690"/>
+                    <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                    <collectionViewFlowLayout key="collectionViewLayout" minimumLineSpacing="10" minimumInteritemSpacing="10" id="bes-ob-FQZ">
+                        <size key="itemSize" width="128" height="128"/>
+                        <size key="headerReferenceSize" width="0.0" height="0.0"/>
+                        <size key="footerReferenceSize" width="0.0" height="0.0"/>
+                        <inset key="sectionInset" minX="0.0" minY="0.0" maxX="0.0" maxY="0.0"/>
+                    </collectionViewFlowLayout>
+                </collectionView>
+                <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="bW0-bM-9b6" customClass="HomeNavigationView" customModule="Instagram_Clone" customModuleProvider="target">
+                    <rect key="frame" x="0.0" y="44" width="414" height="44"/>
+                    <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                    <constraints>
+                        <constraint firstAttribute="height" constant="44" id="a6g-c3-1LR"/>
+                    </constraints>
+                </view>
+            </subviews>
             <viewLayoutGuide key="safeArea" id="fnl-2z-Ty3"/>
             <color key="backgroundColor" systemColor="systemBackgroundColor"/>
-            <point key="canvasLocation" x="132" y="62"/>
+            <constraints>
+                <constraint firstItem="fnl-2z-Ty3" firstAttribute="trailing" secondItem="u1Y-dT-aPa" secondAttribute="trailing" id="HRs-Ul-1Z3"/>
+                <constraint firstItem="bW0-bM-9b6" firstAttribute="leading" secondItem="fnl-2z-Ty3" secondAttribute="leading" id="InK-x9-XBe"/>
+                <constraint firstItem="llP-Xu-LNE" firstAttribute="leading" secondItem="fnl-2z-Ty3" secondAttribute="leading" id="KMe-J8-n6j"/>
+                <constraint firstItem="fnl-2z-Ty3" firstAttribute="trailing" secondItem="bW0-bM-9b6" secondAttribute="trailing" id="ShY-8P-hNn"/>
+                <constraint firstItem="u1Y-dT-aPa" firstAttribute="leading" secondItem="fnl-2z-Ty3" secondAttribute="leading" id="dB0-dN-dtN"/>
+                <constraint firstItem="llP-Xu-LNE" firstAttribute="top" secondItem="bW0-bM-9b6" secondAttribute="bottom" id="e3K-mg-g5i"/>
+                <constraint firstItem="fnl-2z-Ty3" firstAttribute="trailing" secondItem="llP-Xu-LNE" secondAttribute="trailing" id="l8V-ne-1ey"/>
+                <constraint firstItem="bW0-bM-9b6" firstAttribute="top" secondItem="fnl-2z-Ty3" secondAttribute="top" id="sMs-fQ-7SP"/>
+                <constraint firstItem="u1Y-dT-aPa" firstAttribute="top" secondItem="llP-Xu-LNE" secondAttribute="bottom" id="taA-dA-W6r"/>
+                <constraint firstItem="fnl-2z-Ty3" firstAttribute="bottom" secondItem="u1Y-dT-aPa" secondAttribute="bottom" id="wAO-Gu-Ppk"/>
+            </constraints>
         </view>
     </objects>
     <resources>
