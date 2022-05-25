@@ -14,9 +14,5 @@ extension Const {
         case SFProDisplayMedium = "SF-Pro-Display-Medium"
         case SFProDisplaySemibold = "SF-Pro-Display-Semibold"
         case SFProDisplayRegular = "SF-Pro-Display-Regular"
-        
-        var name: String {
-            return self.rawValue
-        }
     }
 }

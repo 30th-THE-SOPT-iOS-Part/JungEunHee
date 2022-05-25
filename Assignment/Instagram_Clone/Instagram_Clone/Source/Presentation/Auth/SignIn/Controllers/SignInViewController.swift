@@ -16,7 +16,7 @@ final class SignInViewController: BaseViewController {
     override func loadView() {
         view = signInView
     }
-    
+
     override func viewDidLoad() {
         super.viewDidLoad()
     }
@@ -25,10 +25,6 @@ final class SignInViewController: BaseViewController {
         super.viewWillAppear(animated)
         
         initializeSignInView()
-    }
-    
-    override func didReceiveMemoryWarning() {
-        super.didReceiveMemoryWarning()
     }
     
     // MARK: - Functions
@@ -42,7 +38,10 @@ final class SignInViewController: BaseViewController {
             $0.addTarget(self, action: #selector(hideButtonClicked), for: .touchUpInside)
         }
     }
-    
+}
+
+// MARK: - Extensions
+extension SignInViewController {
     @objc
     private func textFieldDidChanged(_ textField: UITextField) {
         signInView.signInButton.isEnabled = [signInView.idTextField, signInView.passwordTextField].allSatisfy { $0.hasText }

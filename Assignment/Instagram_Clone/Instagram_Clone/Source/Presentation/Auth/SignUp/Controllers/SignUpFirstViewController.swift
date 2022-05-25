@@ -10,13 +10,13 @@ import UIKit
 final class SignUpFirstViewController: BaseViewController {
     
     // MARK: - @IBOutlet Properties
-    @IBOutlet weak var signUpFirstView: SignUpView!
+    @IBOutlet weak var signUpFirstView: SignUpView! {
+        didSet { signUpFirstView.delegate = self }
+    }
     
     // MARK: - View Life Cycle
     override func viewDidLoad() {
         super.viewDidLoad()
-
-        assignDelegation()
     }
     
     // MARK: - Functions
@@ -31,10 +31,6 @@ final class SignUpFirstViewController: BaseViewController {
         언제든지 변경할 수 있습니다.
         """
         signUpFirstView.inputTextField.placeholder = "사용자 이름"
-    }
-    
-    private func assignDelegation() {
-        signUpFirstView.delegate = self
     }
 }
 

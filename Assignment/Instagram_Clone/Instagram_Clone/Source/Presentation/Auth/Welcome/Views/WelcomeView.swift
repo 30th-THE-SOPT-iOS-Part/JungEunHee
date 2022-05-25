@@ -13,24 +13,24 @@ import Then
 final class WelcomeView: BaseView {
 
     // MARK: - Properties
-    public let welcomeLabel = UILabel().then {
+    let welcomeLabel = UILabel().then {
         $0.font = UIFont.systemFont(ofSize: 24)
         $0.numberOfLines = 0
         $0.sizeToFit()
         $0.text = "000님 Instagram에\n오신 것을 환영합니다"
         $0.textAlignment = .center
     }
-    private let descriptionLabel = UILabel().then {
+    private lazy var descriptionLabel = UILabel().then {
         $0.font = UIFont.systemFont(ofSize: 12)
         $0.sizeToFit()
         $0.text = "언제든지 연락처 정보와 사용자 이름을 변경할 수 있습니다."
         $0.textAlignment = .center
         $0.textColor = Const.Color.darkGray
     }
-    public let doneButton = BlueButton(frame: CGRect(), text: "완료하기", fontSize: 10).then {
+    let doneButton = BlueButton(frame: CGRect(), text: "완료하기", fontSize: 10).then {
         $0.backgroundColor = Const.Color.blue
     }
-    public let anotherLoginButton = UIButton().then {
+    let anotherLoginButton = UIButton().then {
         $0.contentMode = .scaleAspectFit
         $0.setTitle("다른 계정으로 로그인하기", for: .normal)
         $0.setTitleColor(Const.Color.blue, for: .normal)

@@ -7,6 +7,8 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		F617EAED283E5970007312B9 /* Reusable.swift in Sources */ = {isa = PBXBuildFile; fileRef = F617EAEC283E5970007312B9 /* Reusable.swift */; };
+		F617EAEF283E5995007312B9 /* UICollectionViewCell+.swift in Sources */ = {isa = PBXBuildFile; fileRef = F617EAEE283E5995007312B9 /* UICollectionViewCell+.swift */; };
 		F669CD2A2812CCCD00EAE8E7 /* TabbarItem.swift in Sources */ = {isa = PBXBuildFile; fileRef = F669CD292812CCCD00EAE8E7 /* TabbarItem.swift */; };
 		F669CD2D2812CE8000EAE8E7 /* TabBarController.swift in Sources */ = {isa = PBXBuildFile; fileRef = F669CD2C2812CE8000EAE8E7 /* TabBarController.swift */; };
 		F669CD342812CFA100EAE8E7 /* HomeViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = F669CD322812CFA100EAE8E7 /* HomeViewController.swift */; };
@@ -65,6 +67,8 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		F617EAEC283E5970007312B9 /* Reusable.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Reusable.swift; sourceTree = "<group>"; };
+		F617EAEE283E5995007312B9 /* UICollectionViewCell+.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UICollectionViewCell+.swift"; sourceTree = "<group>"; };
 		F669CD292812CCCD00EAE8E7 /* TabbarItem.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TabbarItem.swift; sourceTree = "<group>"; };
 		F669CD2C2812CE8000EAE8E7 /* TabBarController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TabBarController.swift; sourceTree = "<group>"; };
 		F669CD322812CFA100EAE8E7 /* HomeViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeViewController.swift; sourceTree = "<group>"; };
@@ -344,6 +348,7 @@
 				F69559FD27FB1ACD005656AB /* UIView+NibCreatable.swift */,
 				F69559F827FB183E005656AB /* UIViewController+NibCreatable.swift */,
 				F6955A1527FB8131005656AB /* UITextField+.swift */,
+				F617EAEE283E5995007312B9 /* UICollectionViewCell+.swift */,
 			);
 			path = Extensions;
 			sourceTree = "<group>";
@@ -352,6 +357,7 @@
 			isa = PBXGroup;
 			children = (
 				F69559FB27FB18A2005656AB /* NibCreatable.swift */,
+				F617EAEC283E5970007312B9 /* Reusable.swift */,
 			);
 			path = Protocols;
 			sourceTree = "<group>";
@@ -561,6 +567,7 @@
 				F66CD5CC27FB8EC300ACBCD1 /* SignUpView.swift in Sources */,
 				F669CD3C2812CFB600EAE8E7 /* ReelsViewController.swift in Sources */,
 				F6955A0027FB1B62005656AB /* UIStackView+.swift in Sources */,
+				F617EAEF283E5995007312B9 /* UICollectionViewCell+.swift in Sources */,
 				F6B693572829041900012C13 /* StoryDataModel.swift in Sources */,
 				F6955A0727FB3677005656AB /* SignInView.swift in Sources */,
 				F6955A0427FB1EA1005656AB /* Color.swift in Sources */,
@@ -573,6 +580,7 @@
 				F6EA749528257D4E00163B2E /* BaseView.swift in Sources */,
 				F66CD5E127FD24DA00ACBCD1 /* SignUpFirstViewController.swift in Sources */,
 				F6955A1427FB7B9E005656AB /* BlueButton.swift in Sources */,
+				F617EAED283E5970007312B9 /* Reusable.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

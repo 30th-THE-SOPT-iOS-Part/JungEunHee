@@ -9,25 +9,25 @@ import UIKit.UIView
 
 extension UIView {
     // set
-    public func addSubviews(_ views: UIView...) {
+    func addSubviews(_ views: UIView...) {
         for view in views {
             self.addSubview(view)
         }
     }
     
     // style
-    public func makeRounded(radius: CGFloat) {
+    func makeRounded(radius: CGFloat) {
         self.clipsToBounds = true
         self.layer.cornerRadius = radius
     }
     
-    public func makeRoundedWithBorder(radius: CGFloat, borderColor: CGColor, borderWith: CGFloat = 1) {
+    func makeRoundedWithBorder(radius: CGFloat, borderColor: CGColor, borderWith: CGFloat = 1) {
         makeRounded(radius: radius)
         self.layer.borderColor = borderColor
         self.layer.borderWidth = borderWith
     }
     
-    public func makeRoundedSpecificCorner(corners: UIRectCorner, cornerRadius: Double) {
+    func makeRoundedSpecificCorner(corners: UIRectCorner, cornerRadius: Double) {
         let size = CGSize(width: cornerRadius, height: cornerRadius)
         let bezierPath = UIBezierPath(roundedRect: self.bounds, byRoundingCorners: corners, cornerRadii: size)
         /*

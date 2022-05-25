@@ -10,28 +10,20 @@ import UIKit
 final class SignUpSecondViewController: BaseViewController {
     
     // MARK: - @IBOutlet Properties
-    @IBOutlet weak var signUpSecondView: SignUpView!
+    @IBOutlet weak var signUpSecondView: SignUpView! {
+        didSet { signUpSecondView.delegate = self }
+    }
     
     // MARK: - View Life Cycle
     override func viewDidLoad() {
         super.viewDidLoad()
-
-        assignDelegation()
     }
     
     // MARK: - Functions
-    override func setNavigation() {
-        super.setNavigation()
-    }
-    
     override func setStyle() {
         signUpSecondView.titleLabel.text = "비밀번호 만들기"
         signUpSecondView.descriptionLabel.text = "비밀번호를 저장할 수 있으므로 iCloud® 기기에서 로그인\n정보를 입력하지 않아도 됩니다."
         signUpSecondView.inputTextField.placeholder = "비밀번호"
-    }
-    
-    private func assignDelegation() {
-        signUpSecondView.delegate = self
     }
 }
 

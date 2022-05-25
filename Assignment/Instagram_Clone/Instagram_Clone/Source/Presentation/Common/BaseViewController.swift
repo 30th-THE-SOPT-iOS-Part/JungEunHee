@@ -7,7 +7,7 @@
 
 import UIKit
 
-class BaseViewController: UIViewController {
+class BaseViewController: UIViewController, Reusable {
 
     // MARK: - View Life Cycle
     override func viewDidLoad() {

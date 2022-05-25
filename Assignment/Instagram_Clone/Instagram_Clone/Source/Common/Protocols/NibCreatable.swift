@@ -7,7 +7,7 @@
 
 import UIKit
 
-public protocol NibCreatable {
+protocol NibCreatable {
     // set
     static var nib: UINib { get }
     static var nibBundle: Bundle? { get }

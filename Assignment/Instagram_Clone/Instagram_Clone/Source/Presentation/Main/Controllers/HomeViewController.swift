@@ -24,8 +24,10 @@ final class HomeViewController: BaseViewController {
         assignDelegation()
         registerNib()
     }
-    
-    // MARK: - Functions
+}
+
+// MARK: - Extensions
+extension HomeViewController {
     private func assignDelegation() {
         [topCollectionView, feedCollectionView].forEach {
             $0?.delegate = self
@@ -34,12 +36,17 @@ final class HomeViewController: BaseViewController {
     }
     
     private func registerNib() {
-        topCollectionView.register(StoryCollectionViewCell.self, forCellWithReuseIdentifier: StoryCollectionViewCell.identifier)
-        feedCollectionView.register(FeedCollectionViewCell.self, forCellWithReuseIdentifier: FeedCollectionViewCell.identifier)
+        topCollectionView.register(
+            UINib(nibName: StoryCollectionViewCell.reuseIdentifier, bundle: nil),
+            forCellWithReuseIdentifier: StoryCollectionViewCell.reuseIdentifier
+        )
+        feedCollectionView.register(
+            UINib(nibName: FeedCollectionViewCell.reuseIdentifier, bundle: nil),
+            forCellWithReuseIdentifier: FeedCollectionViewCell.reuseIdentifier
+        )
     }
 }
 
-// MARK: - Extensions
 extension HomeViewController: UICollectionViewDelegate { }
 
 extension HomeViewController: UICollectionViewDataSource {
@@ -57,11 +64,11 @@ extension HomeViewController: UICollectionViewDataSource {
     func collectionView(_ collectionView: UICollectionView, cellForItemAt indexPath: IndexPath) -> UICollectionViewCell {
         switch collectionView {
         case topCollectionView:
-            guard let topCell = topCollectionView.dequeueReusableCell(withReuseIdentifier: StoryCollectionViewCell.identifier, for: indexPath) as? StoryCollectionViewCell else { return UICollectionViewCell() }
+            guard let topCell = topCollectionView.dequeueReusableCell(withReuseIdentifier: StoryCollectionViewCell.reuseIdentifier, for: indexPath) as? StoryCollectionViewCell else { return UICollectionViewCell() }
             topCell.setData(data: storyList[indexPath.row])
             return topCell
         case feedCollectionView:
-            guard let feedCell = feedCollectionView.dequeueReusableCell(withReuseIdentifier: FeedCollectionViewCell.identifier, for: indexPath) as? FeedCollectionViewCell else { return UICollectionViewCell() }
+            guard let feedCell = feedCollectionView.dequeueReusableCell(withReuseIdentifier: FeedCollectionViewCell.reuseIdentifier, for: indexPath) as? FeedCollectionViewCell else { return UICollectionViewCell() }
             feedCell.setData(data: feedList[indexPath.row])
             return feedCell
         default:

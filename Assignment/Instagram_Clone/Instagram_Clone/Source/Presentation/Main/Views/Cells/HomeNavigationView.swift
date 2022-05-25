@@ -8,7 +8,6 @@
 import UIKit
 
 final class HomeNavigationView: UIView {
-    static let identifier = "HomeNavigationView"
     
     // MARK: - Initialization
     required init?(coder: NSCoder) {

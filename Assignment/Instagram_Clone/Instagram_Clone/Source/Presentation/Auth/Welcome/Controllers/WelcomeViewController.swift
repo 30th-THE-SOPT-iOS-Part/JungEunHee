@@ -28,7 +28,10 @@ final class WelcomeViewController: BaseViewController {
         welcomeView.doneButton.addTarget(self, action: #selector(addPresentation), for: .touchUpInside)
         welcomeView.anotherLoginButton.addTarget(self, action: #selector(addDissmiss), for: .touchUpInside)
     }
-    
+}
+
+// MARK: - Extensions
+extension WelcomeViewController {
     @objc
     private func addPresentation() {
         let mainVC = TabBarController.instanceFromNib()

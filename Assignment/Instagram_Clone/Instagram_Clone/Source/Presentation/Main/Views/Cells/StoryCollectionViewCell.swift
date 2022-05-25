@@ -8,7 +8,6 @@
 import UIKit
 
 final class StoryCollectionViewCell: UICollectionViewCell {
-    static let identifier = "StoryCollectionViewCell"
     
     // MARK: - @IBOutlet Properties
     @IBOutlet weak var profileImage: UIImageView!

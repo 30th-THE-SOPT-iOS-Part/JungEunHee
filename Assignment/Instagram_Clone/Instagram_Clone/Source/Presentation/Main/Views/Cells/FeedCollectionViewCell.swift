@@ -8,8 +8,7 @@
 import UIKit
 
 final class FeedCollectionViewCell: UICollectionViewCell {
-    static let identifier = "FeedCollectionViewCell"
-    
+
     // MARK: - @IBOutlet Properties
     @IBOutlet weak var profileImage: UIImageView!
     @IBOutlet weak var topName: UILabel!
@@ -32,8 +31,8 @@ extension FeedCollectionViewCell {
         topName.text = data.topName
         feedImage.image = data.makeFeedImage()
         heartCount.text = data.heartCountDescription
-        contentsLabels[1].text = data.bottomName
-        contentsLabels[2].text = data.description
+//        contentsLabels[0].text = data.bottomName
+//        contentsLabels[1].text = data.description
         commentLabel.text = data.commentCountDescription
     }
 }
